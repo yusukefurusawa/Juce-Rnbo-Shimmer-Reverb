@@ -1,0 +1,2256 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		6CC0AFD66F87FA3CA593A4E7 /* JuceRnboShimmerReverb - All */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 0B19ED254AFA1EF0B07D8888;
+			buildPhases = (
+			);
+			dependencies = (
+				3EB91664FC5BDB9C2D769200,
+				DD52C5B67FEAA6BC406694C3,
+				D0D2712D31F20087F964F86C,
+				A8B28D2E095EDFFBC7BF8DDD,
+			);
+			name = "JuceRnboShimmerReverb - All";
+			productName = JuceRnboShimmerReverb;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		023841B0E5C27EC3775F98A8 /* VST3 */ = {isa = PBXBuildFile; fileRef = 42CDC73D08AE1D7476A76AE0; };
+		05DB563C4FC66D456E8B00EA /* RNBO.cpp */ = {isa = PBXBuildFile; fileRef = 050077901E694B05972F3453; };
+		09E980358A5BDABE34A61F25 /* IOKit.framework */ = {isa = PBXBuildFile; fileRef = 49B6E3FCD7FD45D5BE37B3F6; };
+		104BE038BA3516CD0F7200E3 /* Accelerate.framework */ = {isa = PBXBuildFile; fileRef = 9B53BBA9FE4FFE106DE3D3A5; };
+		17AA6F8778F56B8B80A38A49 /* include_juce_graphics.mm */ = {isa = PBXBuildFile; fileRef = D207C66B7CF3E450C4F7E76C; };
+		1D8C8F0EE493D793834A1694 /* PluginProcessor.cpp */ = {isa = PBXBuildFile; fileRef = CC57B592A51C80B204E35129; };
+		20660150A5FF9E3AA91DAAE8 /* Cocoa.framework */ = {isa = PBXBuildFile; fileRef = 515969FE888F100165C0F66A; };
+		271C23455513B00CA488744B /* QuartzCore.framework */ = {isa = PBXBuildFile; fileRef = C76C64CAB3CA59AB01EBB6F8; };
+		2F220CA522DF5B8543904E41 /* Standalone Plugin */ = {isa = PBXBuildFile; fileRef = 87C4439399A1F30B2EDC0FC0; };
+		350305337144051067682276 /* WebKit.framework */ = {isa = PBXBuildFile; fileRef = F16F14FC441DA48CA251D008; };
+		3925C3AE7B0D686280D38D5E /* include_juce_audio_utils.mm */ = {isa = PBXBuildFile; fileRef = 2CBC4D6E35F9D0804B3CA717; };
+		3B1E343096F0516C17E82667 /* CoreMIDI.framework */ = {isa = PBXBuildFile; fileRef = 36B662829748E75669D246DE; };
+		3D2153BFF156A8FD9DAFCAFD /* include_juce_gui_extra.mm */ = {isa = PBXBuildFile; fileRef = D56CFA044D8CF9EFF146A664; };
+		4F78C84BCF7971F406393A93 /* AudioUnit.framework */ = {isa = PBXBuildFile; fileRef = 5B1BC0230441456D4AC50BE8; };
+		5795E9195ABDD6D5314708B6 /* include_juce_audio_plugin_client_VST3.cpp */ = {isa = PBXBuildFile; fileRef = 5C4B079492E84595314EFE80; };
+		5B3A15B23C30E5EE415A6C86 /* include_juce_audio_processors_ara.cpp */ = {isa = PBXBuildFile; fileRef = E2337F984B61AB2DF46EEBAB; };
+		5B4FA017FF7EF303A9FE6336 /* include_juce_audio_processors_lv2_libs.cpp */ = {isa = PBXBuildFile; fileRef = 2CBE984811F3B34F6C570BC3; };
+		5E87E012F5666F9C7D7DCD67 /* CoreAudio.framework */ = {isa = PBXBuildFile; fileRef = 35DA321D5F663ABF9B7AF82C; };
+		6A7B75667AD3B0CB7194CC0D /* Shared Code */ = {isa = PBXBuildFile; fileRef = 041AFDCEA600C514525027FC; };
+		8C6AE439489405085EE5D254 /* include_juce_gui_basics.mm */ = {isa = PBXBuildFile; fileRef = 4696F49401113A1AE18C4F73; };
+		8DFCAC936C6FB04BCD98AEE2 /* include_juce_audio_plugin_client_AU.r */ = {isa = PBXBuildFile; fileRef = DC5CC75445FF19F64E8C62E1; };
+		8E2D81D812B295FD21A7397D /* AudioToolbox.framework */ = {isa = PBXBuildFile; fileRef = 1605F2C1FDD8AD1FE2134D32; };
+		9284F214724449E04E3779DF /* include_juce_audio_basics.mm */ = {isa = PBXBuildFile; fileRef = 18C7D202CBA500270BFCFC58; };
+		99E13540B12B9BA570BEFA50 /* include_juce_audio_plugin_client_AU_1.mm */ = {isa = PBXBuildFile; fileRef = 4950E709C192E456F9A545ED; };
+		A79F02788014144B1995E545 /* include_juce_audio_devices.mm */ = {isa = PBXBuildFile; fileRef = C5F653F14A11D63EB1FC5BE6; };
+		A8745502315EC4F5B7C0AE92 /* DiscRecording.framework */ = {isa = PBXBuildFile; fileRef = 6C76EB85CAF4C68B0144E1B8; };
+		AAFB29C841D2D711819F5714 /* include_juce_audio_plugin_client_AU_2.mm */ = {isa = PBXBuildFile; fileRef = 1170DEE98D633B63C52B9B29; };
+		C9587B6852C5D000ECE26F96 /* include_juce_core.mm */ = {isa = PBXBuildFile; fileRef = DF0269BE5D3F86230021F606; };
+		CE871D04A153DF8C437804D6 /* PluginEditor.cpp */ = {isa = PBXBuildFile; fileRef = EBB9942DB5D51EE478B25F91; };
+		D0BF8FA6A3AD9B577D598324 /* CoreAudioKit.framework */ = {isa = PBXBuildFile; fileRef = D05A3A38B468D1D93A094F52; };
+		D4E2C25EEF24F093A85758E2 /* include_juce_data_structures.mm */ = {isa = PBXBuildFile; fileRef = D4CD614744399D90232F576A; };
+		D52C216F84381B07EE18C0C2 /* AU */ = {isa = PBXBuildFile; fileRef = 16ACBEE2F9CC7C3F82CCE1AF; };
+		D6E14D174C7B251542D76DDA /* include_juce_events.mm */ = {isa = PBXBuildFile; fileRef = 61226AD58C78D73922753ACF; };
+		D7AB524D0DBDAA8B16CC2F73 /* include_juce_audio_plugin_client_VST_utils.mm */ = {isa = PBXBuildFile; fileRef = E07D8D0FFC7ED387CD2EABC4; };
+		D8F27604320BE666A396BB3C /* Foundation.framework */ = {isa = PBXBuildFile; fileRef = EB86ABDED2C4E4021D0E926B; };
+		DC33DB6B3C66CA206E896AA3 /* RecentFilesMenuTemplate.nib */ = {isa = PBXBuildFile; fileRef = 30C99BC48226D79100200C5B; };
+		E4B2A73A9C012146C42E8AA9 /* include_juce_audio_processors.mm */ = {isa = PBXBuildFile; fileRef = 1A97B7535F366FED936C4349; };
+		E922080B6BB6F02F2442C6A3 /* include_juce_audio_formats.mm */ = {isa = PBXBuildFile; fileRef = DFCD127E5376FB40DB67A025; };
+		F142AC9F8D3DC5E7D5FF8C70 /* include_juce_audio_plugin_client_Standalone.cpp */ = {isa = PBXBuildFile; fileRef = 256FC207C87AADB3917C6EE0; };
+		F412B292922980DE9545AF78 /* include_juce_audio_plugin_client_utils.cpp */ = {isa = PBXBuildFile; fileRef = 98C80797C4330570C03C12C3; };
+		F7F48FACB7626396DB27D117 /* BinaryData.cpp */ = {isa = PBXBuildFile; fileRef = 1C2920A93A7A1B67B1BE01DE; };
+		FBD240150EBC2B28251B79D2 /* include_juce_audio_plugin_client_ARA.cpp */ = {isa = PBXBuildFile; fileRef = 74E40F90A9928CD90CCEBE37; };
+		FFEB54BF4EDFEA21C2FD4053 /* rnbo.shimmerev.cpp */ = {isa = PBXBuildFile; fileRef = B805734E39833DAE2B80ACCE; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		008A86B61A94A98F08E6761D /* juce_audio_plugin_client */ /* juce_audio_plugin_client */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_audio_plugin_client; path = /Volumes/ssd/JUCE/modules/juce_audio_plugin_client; sourceTree = "<absolute>"; };
+		03A146C9A0E8538D01ED0A80 /* version.cmake */ /* version.cmake */ = {isa = PBXFileReference; lastKnownFileType = file.cmake; name = version.cmake; path = ../../RnboExport/rnbo/version.cmake; sourceTree = SOURCE_ROOT; };
+		03FD13FBA0D5BAC245CE84AC /* RNBO_DataRefList.h */ /* RNBO_DataRefList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_DataRefList.h; path = ../../RnboExport/rnbo/src/RNBO_DataRefList.h; sourceTree = SOURCE_ROOT; };
+		041AFDCEA600C514525027FC /* Shared Code */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJuceRnboTemplate.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		050077901E694B05972F3453 /* RNBO.cpp */ /* RNBO.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = RNBO.cpp; path = ../../RnboExport/rnbo/RNBO.cpp; sourceTree = SOURCE_ROOT; };
+		05DE25DA9547026CB4C79B2B /* RNBO_DataRefList.cpp */ /* RNBO_DataRefList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = RNBO_DataRefList.cpp; path = ../../RnboExport/rnbo/src/RNBO_DataRefList.cpp; sourceTree = SOURCE_ROOT; };
+		06D32A15D458FF6865A59EE2 /* JucePluginDefines.h */ /* JucePluginDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JucePluginDefines.h; path = ../../JuceLibraryCode/JucePluginDefines.h; sourceTree = SOURCE_ROOT; };
+		0840BFB9CB88D6D4C1F75FE2 /* RNBO_RemoteParameterClient.cpp */ /* RNBO_RemoteParameterClient.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = RNBO_RemoteParameterClient.cpp; path = ../../RnboExport/rnbo/src/RNBO_RemoteParameterClient.cpp; sourceTree = SOURCE_ROOT; };
+		087130B3E7ED77047145ACB0 /* RNBO_ParameterInterfaceSync.h */ /* RNBO_ParameterInterfaceSync.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_ParameterInterfaceSync.h; path = ../../RnboExport/rnbo/src/RNBO_ParameterInterfaceSync.h; sourceTree = SOURCE_ROOT; };
+		08E5E5E069093F94A23E0F19 /* RNBO_Std.h */ /* RNBO_Std.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_Std.h; path = ../../RnboExport/rnbo/common/RNBO_Std.h; sourceTree = SOURCE_ROOT; };
+		0D8E27C703A8EA0716A58DA6 /* RNBO_ParameterInterfaceAsync.h */ /* RNBO_ParameterInterfaceAsync.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_ParameterInterfaceAsync.h; path = ../../RnboExport/rnbo/src/RNBO_ParameterInterfaceAsync.h; sourceTree = SOURCE_ROOT; };
+		0F3692B7994CBDE008147A2D /* presets.json */ /* presets.json */ = {isa = PBXFileReference; lastKnownFileType = file.json; name = presets.json; path = ../../RnboExport/presets.json; sourceTree = SOURCE_ROOT; };
+		0F92F14ACA279F99F17C9E45 /* RNBO_Engine.h */ /* RNBO_Engine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_Engine.h; path = ../../RnboExport/rnbo/src/RNBO_Engine.h; sourceTree = SOURCE_ROOT; };
+		10BDAAC9C1E020064BBBE38C /* RNBO_PatcherStateDummy.h */ /* RNBO_PatcherStateDummy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_PatcherStateDummy.h; path = ../../RnboExport/rnbo/src/RNBO_PatcherStateDummy.h; sourceTree = SOURCE_ROOT; };
+		1170DEE98D633B63C52B9B29 /* include_juce_audio_plugin_client_AU_2.mm */ /* include_juce_audio_plugin_client_AU_2.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_audio_plugin_client_AU_2.mm; path = ../../JuceLibraryCode/include_juce_audio_plugin_client_AU_2.mm; sourceTree = SOURCE_ROOT; };
+		11B3EFC8B0D1FA223DDBBE1F /* concurrentqueue.h */ /* concurrentqueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = concurrentqueue.h; path = ../../RnboExport/rnbo/src/3rdparty/concurrentqueue/concurrentqueue.h; sourceTree = SOURCE_ROOT; };
+		1297A574557942A509B0F0B7 /* RNBO_TempoEvent.h */ /* RNBO_TempoEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_TempoEvent.h; path = ../../RnboExport/rnbo/src/RNBO_TempoEvent.h; sourceTree = SOURCE_ROOT; };
+		14B7B000619E506D8D36188D /* RNBO_PatcherInterface.h */ /* RNBO_PatcherInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_PatcherInterface.h; path = ../../RnboExport/rnbo/common/RNBO_PatcherInterface.h; sourceTree = SOURCE_ROOT; };
+		15D94271CF715532E5FDB67E /* RNBO_PatcherEventSender.h */ /* RNBO_PatcherEventSender.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_PatcherEventSender.h; path = ../../RnboExport/rnbo/src/RNBO_PatcherEventSender.h; sourceTree = SOURCE_ROOT; };
+		1605F2C1FDD8AD1FE2134D32 /* AudioToolbox.framework */ /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		16ACBEE2F9CC7C3F82CCE1AF /* AU */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JuceRnboTemplate.component; sourceTree = BUILT_PRODUCTS_DIR; };
+		18C7D202CBA500270BFCFC58 /* include_juce_audio_basics.mm */ /* include_juce_audio_basics.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_audio_basics.mm; path = ../../JuceLibraryCode/include_juce_audio_basics.mm; sourceTree = SOURCE_ROOT; };
+		191C6022CF00744178440868 /* RNBO_Vector.h */ /* RNBO_Vector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_Vector.h; path = ../../RnboExport/rnbo/src/RNBO_Vector.h; sourceTree = SOURCE_ROOT; };
+		1A97B7535F366FED936C4349 /* include_juce_audio_processors.mm */ /* include_juce_audio_processors.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_audio_processors.mm; path = ../../JuceLibraryCode/include_juce_audio_processors.mm; sourceTree = SOURCE_ROOT; };
+		1AA3A9BD200386E48C29C0DF /* RNBO_Types.h */ /* RNBO_Types.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_Types.h; path = ../../RnboExport/rnbo/common/RNBO_Types.h; sourceTree = SOURCE_ROOT; };
+		1B0C4A5E06E92FAEE00E5A0E /* VST3Info.plist.in */ /* VST3Info.plist.in */ = {isa = PBXFileReference; lastKnownFileType = file.in; name = VST3Info.plist.in; path = ../../RnboExport/rnbo/adapters/juce/staticplugin/VST3Info.plist.in; sourceTree = SOURCE_ROOT; };
+		1BA5B05445A38670BE989112 /* RNBO_PlatformInterface.h */ /* RNBO_PlatformInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_PlatformInterface.h; path = ../../RnboExport/rnbo/common/RNBO_PlatformInterface.h; sourceTree = SOURCE_ROOT; };
+		1C2920A93A7A1B67B1BE01DE /* BinaryData.cpp */ /* BinaryData.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = BinaryData.cpp; path = ../../JuceLibraryCode/BinaryData.cpp; sourceTree = SOURCE_ROOT; };
+		1DDBE5A2FE84215F802F5256 /* RNBO_PatcherEventTarget.h */ /* RNBO_PatcherEventTarget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_PatcherEventTarget.h; path = ../../RnboExport/rnbo/common/RNBO_PatcherEventTarget.h; sourceTree = SOURCE_ROOT; };
+		1E113C9BBBEFF860621EA033 /* RNBO_UnitTests.h */ /* RNBO_UnitTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_UnitTests.h; path = ../../RnboExport/rnbo/src/RNBO_UnitTests.h; sourceTree = SOURCE_ROOT; };
+		1F27723F6096E721ABBB8B96 /* rnbo_external_wrapper.cpp */ /* rnbo_external_wrapper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = rnbo_external_wrapper.cpp; path = ../../RnboExport/rnbo/adapters/max/external/rnbo_external_wrapper/rnbo_external_wrapper.cpp; sourceTree = SOURCE_ROOT; };
+		1FF6D1B12824450B967A183D /* RNBO_WebAssembly.cpp */ /* RNBO_WebAssembly.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = RNBO_WebAssembly.cpp; path = ../../RnboExport/rnbo/adapters/wasm/RNBO_WebAssembly.cpp; sourceTree = SOURCE_ROOT; };
+		200865519C512C302BB13B32 /* RNBO_Presets.h */ /* RNBO_Presets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_Presets.h; path = ../../RnboExport/rnbo/src/RNBO_Presets.h; sourceTree = SOURCE_ROOT; };
+		21DBA5547B397FEAB0C43798 /* RNBO_Debug.h */ /* RNBO_Debug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_Debug.h; path = ../../RnboExport/rnbo/common/RNBO_Debug.h; sourceTree = SOURCE_ROOT; };
+		239B690C490FAD7A4DCB118C /* Info-AU.plist */ /* Info-AU.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-AU.plist"; path = "Info-AU.plist"; sourceTree = SOURCE_ROOT; };
+		256FC207C87AADB3917C6EE0 /* include_juce_audio_plugin_client_Standalone.cpp */ /* include_juce_audio_plugin_client_Standalone.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = include_juce_audio_plugin_client_Standalone.cpp; path = ../../JuceLibraryCode/include_juce_audio_plugin_client_Standalone.cpp; sourceTree = SOURCE_ROOT; };
+		269C9AB3533991DB4A7179CA /* RNBO_JuceAudioProcessorUtils.h */ /* RNBO_JuceAudioProcessorUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_JuceAudioProcessorUtils.h; path = ../../RnboExport/rnbo/adapters/juce/RNBO_JuceAudioProcessorUtils.h; sourceTree = SOURCE_ROOT; };
+		274A4D0AAD49C7BD1DFA0F72 /* RNBO_ParameterInterfaceSync.cpp */ /* RNBO_ParameterInterfaceSync.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = RNBO_ParameterInterfaceSync.cpp; path = ../../RnboExport/rnbo/src/RNBO_ParameterInterfaceSync.cpp; sourceTree = SOURCE_ROOT; };
+		2A80C0D2E2073BBB0A06CFD8 /* lightweightsemaphore.h */ /* lightweightsemaphore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = lightweightsemaphore.h; path = ../../RnboExport/rnbo/src/3rdparty/concurrentqueue/lightweightsemaphore.h; sourceTree = SOURCE_ROOT; };
+		2B8AC71ABC77AD9E79D69C12 /* rnbo_bufferref.h */ /* rnbo_bufferref.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = rnbo_bufferref.h; path = ../../RnboExport/rnbo/adapters/max/rnbo_bufferref.h; sourceTree = SOURCE_ROOT; };
+		2CBC4D6E35F9D0804B3CA717 /* include_juce_audio_utils.mm */ /* include_juce_audio_utils.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_audio_utils.mm; path = ../../JuceLibraryCode/include_juce_audio_utils.mm; sourceTree = SOURCE_ROOT; };
+		2CBE984811F3B34F6C570BC3 /* include_juce_audio_processors_lv2_libs.cpp */ /* include_juce_audio_processors_lv2_libs.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = include_juce_audio_processors_lv2_libs.cpp; path = ../../JuceLibraryCode/include_juce_audio_processors_lv2_libs.cpp; sourceTree = SOURCE_ROOT; };
+		2DA838A68F3ECBB71FA3AEC3 /* RNBO_DataBuffer.cpp */ /* RNBO_DataBuffer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = RNBO_DataBuffer.cpp; path = ../../RnboExport/rnbo/src/RNBO_DataBuffer.cpp; sourceTree = SOURCE_ROOT; };
+		30C99BC48226D79100200C5B /* RecentFilesMenuTemplate.nib */ /* RecentFilesMenuTemplate.nib */ = {isa = PBXFileReference; lastKnownFileType = file.nib; name = RecentFilesMenuTemplate.nib; path = RecentFilesMenuTemplate.nib; sourceTree = SOURCE_ROOT; };
+		333D0D7A09BAC8D77915F21F /* UnityInfo.plist.in */ /* UnityInfo.plist.in */ = {isa = PBXFileReference; lastKnownFileType = file.in; name = UnityInfo.plist.in; path = ../../RnboExport/rnbo/adapters/juce/staticplugin/UnityInfo.plist.in; sourceTree = SOURCE_ROOT; };
+		33CC2937F9FBE9F7D2B95B9F /* RNBO_ListHelpers.h */ /* RNBO_ListHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_ListHelpers.h; path = ../../RnboExport/rnbo/common/RNBO_ListHelpers.h; sourceTree = SOURCE_ROOT; };
+		342DCE6347AE77E48C3EFC65 /* RNBO_UniquePtr.h */ /* RNBO_UniquePtr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_UniquePtr.h; path = ../../RnboExport/rnbo/common/RNBO_UniquePtr.h; sourceTree = SOURCE_ROOT; };
+		359F98579C6E93CA7CFC8438 /* RNBO_UnitTests.cpp */ /* RNBO_UnitTests.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = RNBO_UnitTests.cpp; path = ../../RnboExport/rnbo/src/RNBO_UnitTests.cpp; sourceTree = SOURCE_ROOT; };
+		35AFBC3C58B2CA1D7A3D3DC4 /* rnbo_description.h.in */ /* rnbo_description.h.in */ = {isa = PBXFileReference; lastKnownFileType = file.in; name = rnbo_description.h.in; path = ../../RnboExport/rnbo/cmake/rnbo_description.h.in; sourceTree = SOURCE_ROOT; };
+		35DA321D5F663ABF9B7AF82C /* CoreAudio.framework */ /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		36B662829748E75669D246DE /* CoreMIDI.framework */ /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
+		37211ACC0BBDCDA4349A990E /* RNBO_EventTarget.h */ /* RNBO_EventTarget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_EventTarget.h; path = ../../RnboExport/rnbo/common/RNBO_EventTarget.h; sourceTree = SOURCE_ROOT; };
+		3ABFD17D0C60ADC21AEEE6A8 /* RNBO_PatcherInterfaceImpl.h */ /* RNBO_PatcherInterfaceImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_PatcherInterfaceImpl.h; path = ../../RnboExport/rnbo/common/RNBO_PatcherInterfaceImpl.h; sourceTree = SOURCE_ROOT; };
+		3E57BC1D1A9B974B9B9C145D /* RNBO_ExternalPtr.h */ /* RNBO_ExternalPtr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_ExternalPtr.h; path = ../../RnboExport/rnbo/common/RNBO_ExternalPtr.h; sourceTree = SOURCE_ROOT; };
+		3F0078D942820FAE7191B194 /* RNBO_List.h */ /* RNBO_List.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_List.h; path = ../../RnboExport/rnbo/common/RNBO_List.h; sourceTree = SOURCE_ROOT; };
+		3FE1B05F1FA2C3815BC2B670 /* RNBOConan.cmake */ /* RNBOConan.cmake */ = {isa = PBXFileReference; lastKnownFileType = file.cmake; name = RNBOConan.cmake; path = ../../RnboExport/rnbo/cmake/RNBOConan.cmake; sourceTree = SOURCE_ROOT; };
+		405949C2BB8CC9536E3CECE9 /* RNBO_ExternalLoader.h */ /* RNBO_ExternalLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_ExternalLoader.h; path = ../../RnboExport/rnbo/src/RNBO_ExternalLoader.h; sourceTree = SOURCE_ROOT; };
+		412859DE49F14D2758E4E0E5 /* RNBO_Math.h */ /* RNBO_Math.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_Math.h; path = ../../RnboExport/rnbo/common/RNBO_Math.h; sourceTree = SOURCE_ROOT; };
+		41EFCB7198D26DC3A6787D92 /* RNBO_PatcherFactory.h */ /* RNBO_PatcherFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_PatcherFactory.h; path = ../../RnboExport/rnbo/common/RNBO_PatcherFactory.h; sourceTree = SOURCE_ROOT; };
+		427CDAA44301A33B83588DD8 /* RNBO_EventList.h */ /* RNBO_EventList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_EventList.h; path = ../../RnboExport/rnbo/src/RNBO_EventList.h; sourceTree = SOURCE_ROOT; };
+		42C7C052CFDB222BD7F5AE9A /* RNBO_ClangInterface.h */ /* RNBO_ClangInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_ClangInterface.h; path = ../../RnboExport/rnbo/src/RNBO_ClangInterface.h; sourceTree = SOURCE_ROOT; };
+		42CDC73D08AE1D7476A76AE0 /* VST3 */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JuceRnboTemplate.vst3; sourceTree = BUILT_PRODUCTS_DIR; };
+		43438FEFAB89DAA942EA6814 /* RNBO_EngineInterface.h */ /* RNBO_EngineInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_EngineInterface.h; path = ../../RnboExport/rnbo/common/RNBO_EngineInterface.h; sourceTree = SOURCE_ROOT; };
+		446F4ECD7F553B38FD28CD7A /* au.cpp */ /* au.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = au.cpp; path = ../../RnboExport/rnbo/adapters/juce/staticplugin/au.cpp; sourceTree = SOURCE_ROOT; };
+		4696F49401113A1AE18C4F73 /* include_juce_gui_basics.mm */ /* include_juce_gui_basics.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_gui_basics.mm; path = ../../JuceLibraryCode/include_juce_gui_basics.mm; sourceTree = SOURCE_ROOT; };
+		470B7FA28AB742A50C507076 /* RNBO_MessageEvent.h */ /* RNBO_MessageEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_MessageEvent.h; path = ../../RnboExport/rnbo/src/RNBO_MessageEvent.h; sourceTree = SOURCE_ROOT; };
+		480648E5AC3180239EC44915 /* LICENSE.md */ /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; name = LICENSE.md; path = ../../RnboExport/rnbo/src/3rdparty/concurrentqueue/LICENSE.md; sourceTree = SOURCE_ROOT; };
+		483301ABF80E737D5DCEC7FE /* RNBO_PatcherFactory.cpp */ /* RNBO_PatcherFactory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = RNBO_PatcherFactory.cpp; path = ../../RnboExport/rnbo/src/RNBO_PatcherFactory.cpp; sourceTree = SOURCE_ROOT; };
+		487666CD29ADE23BE5DEFE4F /* RNBO_DataBuffer.h */ /* RNBO_DataBuffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_DataBuffer.h; path = ../../RnboExport/rnbo/src/RNBO_DataBuffer.h; sourceTree = SOURCE_ROOT; };
+		4950E709C192E456F9A545ED /* include_juce_audio_plugin_client_AU_1.mm */ /* include_juce_audio_plugin_client_AU_1.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_audio_plugin_client_AU_1.mm; path = ../../JuceLibraryCode/include_juce_audio_plugin_client_AU_1.mm; sourceTree = SOURCE_ROOT; };
+		49B6E3FCD7FD45D5BE37B3F6 /* IOKit.framework */ /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		49D2CCE9B10EB882D809AB66 /* RNBO_CoreObject.cpp */ /* RNBO_CoreObject.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = RNBO_CoreObject.cpp; path = ../../RnboExport/rnbo/src/RNBO_CoreObject.cpp; sourceTree = SOURCE_ROOT; };
+		4A351179E70453FD4D61A71F /* AUInfo.plist.in */ /* AUInfo.plist.in */ = {isa = PBXFileReference; lastKnownFileType = file.in; name = AUInfo.plist.in; path = ../../RnboExport/rnbo/adapters/juce/staticplugin/AUInfo.plist.in; sourceTree = SOURCE_ROOT; };
+		4C22CCF1FD29068467FA6FD6 /* RNBO_ParameterEvent.h */ /* RNBO_ParameterEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_ParameterEvent.h; path = ../../RnboExport/rnbo/src/RNBO_ParameterEvent.h; sourceTree = SOURCE_ROOT; };
+		4D28603BEF0F74C5435A336E /* RNBO_DataRef.h */ /* RNBO_DataRef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_DataRef.h; path = ../../RnboExport/rnbo/common/RNBO_DataRef.h; sourceTree = SOURCE_ROOT; };
+		4E09DCC0EBFB8491B92E29D7 /* RNBO_EngineLink.h */ /* RNBO_EngineLink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_EngineLink.h; path = ../../RnboExport/rnbo/common/RNBO_EngineLink.h; sourceTree = SOURCE_ROOT; };
+		4E349FD0303E4C2A8E2C25C4 /* RNBO_PresetList.h */ /* RNBO_PresetList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_PresetList.h; path = ../../RnboExport/rnbo/src/RNBO_PresetList.h; sourceTree = SOURCE_ROOT; };
+		4E49E30C68120ED957FBCA84 /* conan.cmake */ /* conan.cmake */ = {isa = PBXFileReference; lastKnownFileType = file.cmake; name = conan.cmake; path = ../../RnboExport/rnbo/cmake/conan.cmake; sourceTree = SOURCE_ROOT; };
+		4EF3A211D9994163C40103BE /* RNBO_JuceAudioProcessor.h */ /* RNBO_JuceAudioProcessor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_JuceAudioProcessor.h; path = ../../RnboExport/rnbo/adapters/juce/RNBO_JuceAudioProcessor.h; sourceTree = SOURCE_ROOT; };
+		4F1ED558830FF9623EB90754 /* RNBO_EventSender.h */ /* RNBO_EventSender.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_EventSender.h; path = ../../RnboExport/rnbo/src/RNBO_EventSender.h; sourceTree = SOURCE_ROOT; };
+		4FE9851BA2BE039535A1CFEA /* RNBO_ParameterInterface.h */ /* RNBO_ParameterInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_ParameterInterface.h; path = ../../RnboExport/rnbo/common/RNBO_ParameterInterface.h; sourceTree = SOURCE_ROOT; };
+		50A214BDD750245FF36FB48A /* json.hpp */ /* json.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = json.hpp; path = ../../RnboExport/rnbo/src/3rdparty/json/json.hpp; sourceTree = SOURCE_ROOT; };
+		50CE71386AACBE02A6170556 /* variant.hpp */ /* variant.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = variant.hpp; path = ../../RnboExport/rnbo/src/3rdparty/MPark_variant/variant.hpp; sourceTree = SOURCE_ROOT; };
+		512328D8F950FEDEC9386000 /* blockingconcurrentqueue.h */ /* blockingconcurrentqueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = blockingconcurrentqueue.h; path = ../../RnboExport/rnbo/src/3rdparty/concurrentqueue/blockingconcurrentqueue.h; sourceTree = SOURCE_ROOT; };
+		515969FE888F100165C0F66A /* Cocoa.framework */ /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		5215801D19F103A452C3151C /* ParamIDs.h */ /* ParamIDs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ParamIDs.h; path = ../../Source/ParamIDs.h; sourceTree = SOURCE_ROOT; };
+		551155C5AB24EB26221D4167 /* RNBO_PatcherStateInterface.h */ /* RNBO_PatcherStateInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_PatcherStateInterface.h; path = ../../RnboExport/rnbo/common/RNBO_PatcherStateInterface.h; sourceTree = SOURCE_ROOT; };
+		5741B71426F5B3F7671E7398 /* common.cpp */ /* common.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = common.cpp; path = ../../RnboExport/rnbo/adapters/juce/staticplugin/common.cpp; sourceTree = SOURCE_ROOT; };
+		57967C15ADA19775D1D094EE /* RNBO_JuceAudioProcessor.cpp */ /* RNBO_JuceAudioProcessor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = RNBO_JuceAudioProcessor.cpp; path = ../../RnboExport/rnbo/adapters/juce/RNBO_JuceAudioProcessor.cpp; sourceTree = SOURCE_ROOT; };
+		58B10C5AC6614DC21902DCDD /* RNBO_PlatformInterfaceNoStdLib.cpp */ /* RNBO_PlatformInterfaceNoStdLib.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = RNBO_PlatformInterfaceNoStdLib.cpp; path = ../../RnboExport/rnbo/src/platforms/nostdlib/RNBO_PlatformInterfaceNoStdLib.cpp; sourceTree = SOURCE_ROOT; };
+		58D96C8F1A53DD6031A781A6 /* RNBO_MaxPresetAdapter.h */ /* RNBO_MaxPresetAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_MaxPresetAdapter.h; path = ../../RnboExport/rnbo/adapters/max/RNBO_MaxPresetAdapter.h; sourceTree = SOURCE_ROOT; };
+		5B1BC0230441456D4AC50BE8 /* AudioUnit.framework */ /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		5C4B079492E84595314EFE80 /* include_juce_audio_plugin_client_VST3.cpp */ /* include_juce_audio_plugin_client_VST3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = include_juce_audio_plugin_client_VST3.cpp; path = ../../JuceLibraryCode/include_juce_audio_plugin_client_VST3.cpp; sourceTree = SOURCE_ROOT; };
+		5E68882A546A03C5991CCC01 /* RNBO_PlatformInterfaceStdLib.h */ /* RNBO_PlatformInterfaceStdLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_PlatformInterfaceStdLib.h; path = ../../RnboExport/rnbo/src/platforms/stdlib/RNBO_PlatformInterfaceStdLib.h; sourceTree = SOURCE_ROOT; };
+		608F5C3CCDB3F1E04C6551FD /* RNBO_TimeSignatureEvent.h */ /* RNBO_TimeSignatureEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_TimeSignatureEvent.h; path = ../../RnboExport/rnbo/src/RNBO_TimeSignatureEvent.h; sourceTree = SOURCE_ROOT; };
+		60D67B3A23FB53F552C39698 /* RNBO_String.h */ /* RNBO_String.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_String.h; path = ../../RnboExport/rnbo/common/RNBO_String.h; sourceTree = SOURCE_ROOT; };
+		61226AD58C78D73922753ACF /* include_juce_events.mm */ /* include_juce_events.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_events.mm; path = ../../JuceLibraryCode/include_juce_events.mm; sourceTree = SOURCE_ROOT; };
+		647A92EB7369A474FF2D626A /* RNBO_PresetList.cpp */ /* RNBO_PresetList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = RNBO_PresetList.cpp; path = ../../RnboExport/rnbo/src/RNBO_PresetList.cpp; sourceTree = SOURCE_ROOT; };
+		673ED6BB36EC16800D618D74 /* PluginEditor.h */ /* PluginEditor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PluginEditor.h; path = ../../Source/PluginEditor.h; sourceTree = SOURCE_ROOT; };
+		67AF951DE477ED082B888D9C /* JuceHeader.h */ /* JuceHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JuceHeader.h; path = ../../JuceLibraryCode/JuceHeader.h; sourceTree = SOURCE_ROOT; };
+		68FE5B2171C7F1C0B75171D8 /* RNBO_ProbingInterface.h */ /* RNBO_ProbingInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_ProbingInterface.h; path = ../../RnboExport/rnbo/common/RNBO_ProbingInterface.h; sourceTree = SOURCE_ROOT; };
+		692654BD3742F403DB95A1E1 /* Info-Standalone_Plugin.plist */ /* Info-Standalone_Plugin.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-Standalone_Plugin.plist"; path = "Info-Standalone_Plugin.plist"; sourceTree = SOURCE_ROOT; };
+		6A37E8378F9E5F5600B59EBE /* RNBO_AudioBufferConverter.h */ /* RNBO_AudioBufferConverter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_AudioBufferConverter.h; path = ../../RnboExport/rnbo/src/RNBO_AudioBufferConverter.h; sourceTree = SOURCE_ROOT; };
+		6BE3082D2C2F177E4A6BAA3F /* RNBO_DynamicPatcherFactory.h */ /* RNBO_DynamicPatcherFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_DynamicPatcherFactory.h; path = ../../RnboExport/rnbo/src/RNBO_DynamicPatcherFactory.h; sourceTree = SOURCE_ROOT; };
+		6C76EB85CAF4C68B0144E1B8 /* DiscRecording.framework */ /* DiscRecording.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DiscRecording.framework; path = System/Library/Frameworks/DiscRecording.framework; sourceTree = SDKROOT; };
+		6CF0EFA7DA62035A0F91C4F5 /* juce_audio_formats */ /* juce_audio_formats */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_audio_formats; path = /Volumes/ssd/JUCE/modules/juce_audio_formats; sourceTree = "<absolute>"; };
+		6EC295D4C12786874CAB461C /* RNBO_PlatformInterfaceImpl.cpp */ /* RNBO_PlatformInterfaceImpl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = RNBO_PlatformInterfaceImpl.cpp; path = ../../RnboExport/rnbo/src/RNBO_PlatformInterfaceImpl.cpp; sourceTree = SOURCE_ROOT; };
+		6F9D869BF9DBC03A8A1B7DE9 /* juce_gui_basics */ /* juce_gui_basics */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_gui_basics; path = /Volumes/ssd/JUCE/modules/juce_gui_basics; sourceTree = "<absolute>"; };
+		7160324562D7F6C2932CB421 /* rnbo_bufferref.cpp */ /* rnbo_bufferref.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = rnbo_bufferref.cpp; path = ../../RnboExport/rnbo/adapters/max/rnbo_bufferref.cpp; sourceTree = SOURCE_ROOT; };
+		71F65992677C99303F762CD2 /* RNBO_ParameterInterfaceAsync.cpp */ /* RNBO_ParameterInterfaceAsync.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = RNBO_ParameterInterfaceAsync.cpp; path = ../../RnboExport/rnbo/src/RNBO_ParameterInterfaceAsync.cpp; sourceTree = SOURCE_ROOT; };
+		73494B31C3DE4780453D6FD7 /* BinaryData.h */ /* BinaryData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BinaryData.h; path = ../../JuceLibraryCode/BinaryData.h; sourceTree = SOURCE_ROOT; };
+		743BB1543009BAECE279A18E /* RNBO_ServiceNotification.h */ /* RNBO_ServiceNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_ServiceNotification.h; path = ../../RnboExport/rnbo/src/RNBO_ServiceNotification.h; sourceTree = SOURCE_ROOT; };
+		74E40F90A9928CD90CCEBE37 /* include_juce_audio_plugin_client_ARA.cpp */ /* include_juce_audio_plugin_client_ARA.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = include_juce_audio_plugin_client_ARA.cpp; path = ../../JuceLibraryCode/include_juce_audio_plugin_client_ARA.cpp; sourceTree = SOURCE_ROOT; };
+		75F64B63BA0690E580639D4F /* RNBOJuce.cmake */ /* RNBOJuce.cmake */ = {isa = PBXFileReference; lastKnownFileType = file.cmake; name = RNBOJuce.cmake; path = ../../RnboExport/rnbo/cmake/RNBOJuce.cmake; sourceTree = SOURCE_ROOT; };
+		77DEDB6196C34FBC66968BF2 /* RNBO_MIDIHelper.h */ /* RNBO_MIDIHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_MIDIHelper.h; path = ../../RnboExport/rnbo/common/RNBO_MIDIHelper.h; sourceTree = SOURCE_ROOT; };
+		792621871AA4C4E089682BB5 /* juce_audio_processors */ /* juce_audio_processors */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_audio_processors; path = /Volumes/ssd/JUCE/modules/juce_audio_processors; sourceTree = "<absolute>"; };
+		7A80B45A05BC061BC7BDFB7E /* RNBO_MaxPresetAdapter.cpp */ /* RNBO_MaxPresetAdapter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = RNBO_MaxPresetAdapter.cpp; path = ../../RnboExport/rnbo/adapters/max/RNBO_MaxPresetAdapter.cpp; sourceTree = SOURCE_ROOT; };
+		7A9E145DFD006671BDA81979 /* juce_audio_devices */ /* juce_audio_devices */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_audio_devices; path = /Volumes/ssd/JUCE/modules/juce_audio_devices; sourceTree = "<absolute>"; };
+		7AC8FE1AE703B3116B100468 /* RNBO_TransportEvent.h */ /* RNBO_TransportEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_TransportEvent.h; path = ../../RnboExport/rnbo/src/RNBO_TransportEvent.h; sourceTree = SOURCE_ROOT; };
+		7BAA3497D97951B0D431EFC0 /* juce_gui_extra */ /* juce_gui_extra */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_gui_extra; path = /Volumes/ssd/JUCE/modules/juce_gui_extra; sourceTree = "<absolute>"; };
+		7BDFFB30D45950E777FBE8E3 /* description.json */ /* description.json */ = {isa = PBXFileReference; lastKnownFileType = file.json; name = description.json; path = ../../RnboExport/description.json; sourceTree = SOURCE_ROOT; };
+		7CE2926018B2143B0BD9F3FE /* RNBO_FileChangeWatcher.cpp */ /* RNBO_FileChangeWatcher.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = RNBO_FileChangeWatcher.cpp; path = ../../RnboExport/rnbo/src/RNBO_FileChangeWatcher.cpp; sourceTree = SOURCE_ROOT; };
+		7F8B7DD6A03DCD0A81D40B2A /* PkgInfo */ /* PkgInfo */ = {isa = PBXFileReference; lastKnownFileType = file; name = PkgInfo; path = ../../RnboExport/rnbo/adapters/juce/staticplugin/PkgInfo; sourceTree = SOURCE_ROOT; };
+		7FB54858561259F198C9D2FB /* dependencies.json */ /* dependencies.json */ = {isa = PBXFileReference; lastKnownFileType = file.json; name = dependencies.json; path = ../../RnboExport/dependencies.json; sourceTree = SOURCE_ROOT; };
+		801A867489772E20D2437F34 /* RNBO_ClockEvent.h */ /* RNBO_ClockEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_ClockEvent.h; path = ../../RnboExport/rnbo/src/RNBO_ClockEvent.h; sourceTree = SOURCE_ROOT; };
+		80749D72E1CD71357501730C /* RNBO_UniversalEvent.h */ /* RNBO_UniversalEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_UniversalEvent.h; path = ../../RnboExport/rnbo/src/RNBO_UniversalEvent.h; sourceTree = SOURCE_ROOT; };
+		82473326823DC6CAF0955B08 /* RNBO_ExternalBase.h */ /* RNBO_ExternalBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_ExternalBase.h; path = ../../RnboExport/rnbo/common/RNBO_ExternalBase.h; sourceTree = SOURCE_ROOT; };
+		84615111975C332C80F3AAEA /* RNBO_JuceAudioProcessorUtils.cpp */ /* RNBO_JuceAudioProcessorUtils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = RNBO_JuceAudioProcessorUtils.cpp; path = ../../RnboExport/rnbo/adapters/juce/RNBO_JuceAudioProcessorUtils.cpp; sourceTree = SOURCE_ROOT; };
+		87C4439399A1F30B2EDC0FC0 /* Standalone Plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JuceRnboTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F39C415C04C810FB99D4C78 /* RNBO_Config.h */ /* RNBO_Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_Config.h; path = ../../RnboExport/rnbo/src/RNBO_Config.h; sourceTree = SOURCE_ROOT; };
+		8F57CAAE5176C045508C13A9 /* RNBO_MidiStreamParser.h */ /* RNBO_MidiStreamParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_MidiStreamParser.h; path = ../../RnboExport/rnbo/src/RNBO_MidiStreamParser.h; sourceTree = SOURCE_ROOT; };
+		909B7520F8194F9E821876D7 /* RNBO_JuceAudioProcessorEditor.h */ /* RNBO_JuceAudioProcessorEditor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_JuceAudioProcessorEditor.h; path = ../../RnboExport/rnbo/adapters/juce/RNBO_JuceAudioProcessorEditor.h; sourceTree = SOURCE_ROOT; };
+		930188224C48522B142A1E6E /* main.cpp */ /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../../RnboExport/rnbo/test/main.cpp; sourceTree = SOURCE_ROOT; };
+		932FEAC800DD12A7D953AB38 /* RNBO_EmptyEvent.h */ /* RNBO_EmptyEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_EmptyEvent.h; path = ../../RnboExport/rnbo/src/RNBO_EmptyEvent.h; sourceTree = SOURCE_ROOT; };
+		9383E1E4BBF00AEFC2673993 /* RNBO_External.h */ /* RNBO_External.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_External.h; path = ../../RnboExport/rnbo/externals/RNBO_External.h; sourceTree = SOURCE_ROOT; };
+		9446E182D5D9FF6DB86DC04E /* MinGWSTDThreads.cmake */ /* MinGWSTDThreads.cmake */ = {isa = PBXFileReference; lastKnownFileType = file.cmake; name = MinGWSTDThreads.cmake; path = ../../RnboExport/rnbo/cmake/MinGWSTDThreads.cmake; sourceTree = SOURCE_ROOT; };
+		97F416FECFA480F2DD7AE6E2 /* RNBO_MidiEvent.h */ /* RNBO_MidiEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_MidiEvent.h; path = ../../RnboExport/rnbo/src/RNBO_MidiEvent.h; sourceTree = SOURCE_ROOT; };
+		98C80797C4330570C03C12C3 /* include_juce_audio_plugin_client_utils.cpp */ /* include_juce_audio_plugin_client_utils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = include_juce_audio_plugin_client_utils.cpp; path = ../../JuceLibraryCode/include_juce_audio_plugin_client_utils.cpp; sourceTree = SOURCE_ROOT; };
+		9A07C32461F3A3155DC72F02 /* RNBO_DllExternal.h */ /* RNBO_DllExternal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_DllExternal.h; path = ../../RnboExport/rnbo/externals/RNBO_DllExternal.h; sourceTree = SOURCE_ROOT; };
+		9B53BBA9FE4FFE106DE3D3A5 /* Accelerate.framework */ /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		9F8F01FA3C68DF15711AAAD2 /* RNBO_PatcherState.cpp */ /* RNBO_PatcherState.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = RNBO_PatcherState.cpp; path = ../../RnboExport/rnbo/src/RNBO_PatcherState.cpp; sourceTree = SOURCE_ROOT; };
+		9FD097353CE23945F42B7239 /* RNBO_DynamicPatcherFactory.cpp */ /* RNBO_DynamicPatcherFactory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = RNBO_DynamicPatcherFactory.cpp; path = ../../RnboExport/rnbo/src/RNBO_DynamicPatcherFactory.cpp; sourceTree = SOURCE_ROOT; };
+		A00E22A4CFB4F46A65A6069D /* RNBO.h */ /* RNBO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO.h; path = ../../RnboExport/rnbo/RNBO.h; sourceTree = SOURCE_ROOT; };
+		A305D728C10582F08326DD10 /* concurrentqueue_internal_debug.h */ /* concurrentqueue_internal_debug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = concurrentqueue_internal_debug.h; path = ../../RnboExport/rnbo/src/3rdparty/concurrentqueue/internal/concurrentqueue_internal_debug.h; sourceTree = SOURCE_ROOT; };
+		A3131A1B1DAE801DA52C9C1E /* RNBO_StartupEvent.h */ /* RNBO_StartupEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_StartupEvent.h; path = ../../RnboExport/rnbo/src/RNBO_StartupEvent.h; sourceTree = SOURCE_ROOT; };
+		A36459A32BF7A5D2B8B547FB /* RNBO_HardwareDevice.h */ /* RNBO_HardwareDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_HardwareDevice.h; path = ../../RnboExport/rnbo/src/RNBO_HardwareDevice.h; sourceTree = SOURCE_ROOT; };
+		A64EF8157682AFC4A9C78640 /* RNBO_TimeConverter.h */ /* RNBO_TimeConverter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_TimeConverter.h; path = ../../RnboExport/rnbo/common/RNBO_TimeConverter.h; sourceTree = SOURCE_ROOT; };
+		A8F9B4B86877F50E08C295AD /* RNBO_ExternalData.h */ /* RNBO_ExternalData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_ExternalData.h; path = ../../RnboExport/rnbo/src/RNBO_ExternalData.h; sourceTree = SOURCE_ROOT; };
+		AA5BEBA6122589A83ECE6E48 /* Info-VST3.plist */ /* Info-VST3.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-VST3.plist"; path = "Info-VST3.plist"; sourceTree = SOURCE_ROOT; };
+		AAF93C971BD5006CC4792084 /* RNBO_List.cpp */ /* RNBO_List.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = RNBO_List.cpp; path = ../../RnboExport/rnbo/src/RNBO_List.cpp; sourceTree = SOURCE_ROOT; };
+		ABFC1154E4ED7EDFF43F235D /* SCCache.cmake */ /* SCCache.cmake */ = {isa = PBXFileReference; lastKnownFileType = file.cmake; name = SCCache.cmake; path = ../../RnboExport/rnbo/cmake/SCCache.cmake; sourceTree = SOURCE_ROOT; };
+		AE7FDDDCB9CBFBA246BA3485 /* atomicops.h */ /* atomicops.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = atomicops.h; path = ../../RnboExport/rnbo/src/3rdparty/readerwriterqueue/atomicops.h; sourceTree = SOURCE_ROOT; };
+		B02EA2D626BE50D2A47FCB6F /* LICENSE */ /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = file; name = LICENSE; path = ../../RnboExport/rnbo/LICENSE; sourceTree = SOURCE_ROOT; };
+		B2B5CFBF9A2EA4A715115338 /* juce_core */ /* juce_core */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_core; path = /Volumes/ssd/JUCE/modules/juce_core; sourceTree = "<absolute>"; };
+		B42E369D5231954A21DBAB9F /* RNBO_ParameterEventInterface.h */ /* RNBO_ParameterEventInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_ParameterEventInterface.h; path = ../../RnboExport/rnbo/src/RNBO_ParameterEventInterface.h; sourceTree = SOURCE_ROOT; };
+		B47E6C3FC814DA44A528D043 /* readerwriterqueue.h */ /* readerwriterqueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = readerwriterqueue.h; path = ../../RnboExport/rnbo/src/3rdparty/readerwriterqueue/readerwriterqueue.h; sourceTree = SOURCE_ROOT; };
+		B4EACC32CA371F95EB4F92CB /* PluginProcessor.h */ /* PluginProcessor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PluginProcessor.h; path = ../../Source/PluginProcessor.h; sourceTree = SOURCE_ROOT; };
+		B7B8ADD7F5A1D114E3716DFE /* RNBO_Engine.cpp */ /* RNBO_Engine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = RNBO_Engine.cpp; path = ../../RnboExport/rnbo/src/RNBO_Engine.cpp; sourceTree = SOURCE_ROOT; };
+		B805734E39833DAE2B80ACCE /* rnbo.shimmerev.cpp */ /* rnbo.shimmerev.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = rnbo.shimmerev.cpp; path = ../../RnboExport/rnbo.shimmerev.cpp; sourceTree = SOURCE_ROOT; };
+		BCD964269915FD3B6CCBB624 /* RNBO_JuceAudioProcessorEditor.cpp */ /* RNBO_JuceAudioProcessorEditor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = RNBO_JuceAudioProcessorEditor.cpp; path = ../../RnboExport/rnbo/adapters/juce/RNBO_JuceAudioProcessorEditor.cpp; sourceTree = SOURCE_ROOT; };
+		C05C5FE8EABCB459241C63FB /* RNBO_Logger.cpp */ /* RNBO_Logger.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = RNBO_Logger.cpp; path = ../../RnboExport/rnbo/src/RNBO_Logger.cpp; sourceTree = SOURCE_ROOT; };
+		C07E6E25A8F035CE0C6F9BF1 /* RNBO_ExternalLoader.cpp */ /* RNBO_ExternalLoader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = RNBO_ExternalLoader.cpp; path = ../../RnboExport/rnbo/src/RNBO_ExternalLoader.cpp; sourceTree = SOURCE_ROOT; };
+		C0E9CE6C40FF5DABF9AC999D /* RNBO_MaxClang.h */ /* RNBO_MaxClang.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_MaxClang.h; path = ../../RnboExport/rnbo/src/RNBO_MaxClang.h; sourceTree = SOURCE_ROOT; };
+		C1BB994ACC4CF824E368419A /* juce_data_structures */ /* juce_data_structures */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_data_structures; path = /Volumes/ssd/JUCE/modules/juce_data_structures; sourceTree = "<absolute>"; };
+		C1D7B6B557249CD2764834F9 /* juce_events */ /* juce_events */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_events; path = /Volumes/ssd/JUCE/modules/juce_events; sourceTree = "<absolute>"; };
+		C23FE3CFFEBAFEB87BA9E4D8 /* RNBO_Utils.h */ /* RNBO_Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_Utils.h; path = ../../RnboExport/rnbo/src/RNBO_Utils.h; sourceTree = SOURCE_ROOT; };
+		C2F0E87800073CFFC194F2AC /* RNBO_Array.h */ /* RNBO_Array.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_Array.h; path = ../../RnboExport/rnbo/common/RNBO_Array.h; sourceTree = SOURCE_ROOT; };
+		C3AF8C0B7EE2C1852567AD48 /* RNBO_CompilerMacros.h */ /* RNBO_CompilerMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_CompilerMacros.h; path = ../../RnboExport/rnbo/common/RNBO_CompilerMacros.h; sourceTree = SOURCE_ROOT; };
+		C5F653F14A11D63EB1FC5BE6 /* include_juce_audio_devices.mm */ /* include_juce_audio_devices.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_audio_devices.mm; path = ../../JuceLibraryCode/include_juce_audio_devices.mm; sourceTree = SOURCE_ROOT; };
+		C63A09E67AE7511044BEA9D4 /* RNBO_ParamNameHash.h */ /* RNBO_ParamNameHash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_ParamNameHash.h; path = ../../RnboExport/rnbo/src/RNBO_ParamNameHash.h; sourceTree = SOURCE_ROOT; };
+		C76C64CAB3CA59AB01EBB6F8 /* QuartzCore.framework */ /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CC57B592A51C80B204E35129 /* PluginProcessor.cpp */ /* PluginProcessor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = PluginProcessor.cpp; path = ../../Source/PluginProcessor.cpp; sourceTree = SOURCE_ROOT; };
+		CD5F7CF63545627011359A9C /* RNBO_Version.h */ /* RNBO_Version.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_Version.h; path = ../../RnboExport/rnbo/common/RNBO_Version.h; sourceTree = SOURCE_ROOT; };
+		CE1A0F1EF5677212B8FD7A36 /* RNBO_EngineCore.h */ /* RNBO_EngineCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_EngineCore.h; path = ../../RnboExport/rnbo/src/RNBO_EngineCore.h; sourceTree = SOURCE_ROOT; };
+		D059DB2C8AB4B893B38FD689 /* RNBO_ProcessInterface.h */ /* RNBO_ProcessInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_ProcessInterface.h; path = ../../RnboExport/rnbo/common/RNBO_ProcessInterface.h; sourceTree = SOURCE_ROOT; };
+		D05A3A38B468D1D93A094F52 /* CoreAudioKit.framework */ /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
+		D14082C0AFA66772D3815BE3 /* unity.cpp */ /* unity.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = unity.cpp; path = ../../RnboExport/rnbo/adapters/juce/staticplugin/unity.cpp; sourceTree = SOURCE_ROOT; };
+		D1ED45E450C82458DC278D48 /* RNBO_LoggerNoStdLib.cpp */ /* RNBO_LoggerNoStdLib.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = RNBO_LoggerNoStdLib.cpp; path = ../../RnboExport/rnbo/src/platforms/nostdlib/RNBO_LoggerNoStdLib.cpp; sourceTree = SOURCE_ROOT; };
+		D207C66B7CF3E450C4F7E76C /* include_juce_graphics.mm */ /* include_juce_graphics.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_graphics.mm; path = ../../JuceLibraryCode/include_juce_graphics.mm; sourceTree = SOURCE_ROOT; };
+		D4CD614744399D90232F576A /* include_juce_data_structures.mm */ /* include_juce_data_structures.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_data_structures.mm; path = ../../JuceLibraryCode/include_juce_data_structures.mm; sourceTree = SOURCE_ROOT; };
+		D56CFA044D8CF9EFF146A664 /* include_juce_gui_extra.mm */ /* include_juce_gui_extra.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_gui_extra.mm; path = ../../JuceLibraryCode/include_juce_gui_extra.mm; sourceTree = SOURCE_ROOT; };
+		D6C5D8F399D874C58E91A25F /* vst3.cpp */ /* vst3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = vst3.cpp; path = ../../RnboExport/rnbo/adapters/juce/staticplugin/vst3.cpp; sourceTree = SOURCE_ROOT; };
+		DA9A84241EF4983F5B5FB562 /* juce_audio_utils */ /* juce_audio_utils */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_audio_utils; path = /Volumes/ssd/JUCE/modules/juce_audio_utils; sourceTree = "<absolute>"; };
+		DC5CC75445FF19F64E8C62E1 /* include_juce_audio_plugin_client_AU.r */ /* include_juce_audio_plugin_client_AU.r */ = {isa = PBXFileReference; lastKnownFileType = file.r; name = include_juce_audio_plugin_client_AU.r; path = ../../JuceLibraryCode/include_juce_audio_plugin_client_AU.r; sourceTree = SOURCE_ROOT; };
+		DCE4A8DDCDB7F361A1EF16B5 /* ext_rnbo.h */ /* ext_rnbo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ext_rnbo.h; path = ../../RnboExport/rnbo/externals/ext_rnbo.h; sourceTree = SOURCE_ROOT; };
+		DE0722879EFAE30B1CE99078 /* RNBO_PresetEvent.h */ /* RNBO_PresetEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_PresetEvent.h; path = ../../RnboExport/rnbo/src/RNBO_PresetEvent.h; sourceTree = SOURCE_ROOT; };
+		DEBD3393559B20433A3C216D /* RNBO_FileChangeWatcher.h */ /* RNBO_FileChangeWatcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_FileChangeWatcher.h; path = ../../RnboExport/rnbo/src/RNBO_FileChangeWatcher.h; sourceTree = SOURCE_ROOT; };
+		DEC6F78E9FF85F3F91F620D7 /* RNBO_DynamicSymbolRegistry.h */ /* RNBO_DynamicSymbolRegistry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_DynamicSymbolRegistry.h; path = ../../RnboExport/rnbo/src/RNBO_DynamicSymbolRegistry.h; sourceTree = SOURCE_ROOT; };
+		DEF1EF2F0E605287FED6CD25 /* RNBO_DataRefEvent.h */ /* RNBO_DataRefEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_DataRefEvent.h; path = ../../RnboExport/rnbo/src/RNBO_DataRefEvent.h; sourceTree = SOURCE_ROOT; };
+		DF0269BE5D3F86230021F606 /* include_juce_core.mm */ /* include_juce_core.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_core.mm; path = ../../JuceLibraryCode/include_juce_core.mm; sourceTree = SOURCE_ROOT; };
+		DF468387415401063681135A /* juce_graphics */ /* juce_graphics */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_graphics; path = /Volumes/ssd/JUCE/modules/juce_graphics; sourceTree = "<absolute>"; };
+		DFCD127E5376FB40DB67A025 /* include_juce_audio_formats.mm */ /* include_juce_audio_formats.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_audio_formats.mm; path = ../../JuceLibraryCode/include_juce_audio_formats.mm; sourceTree = SOURCE_ROOT; };
+		E02478A1CF0F9679C122D76C /* RNBO_MaxClang.cpp */ /* RNBO_MaxClang.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = RNBO_MaxClang.cpp; path = ../../RnboExport/rnbo/src/RNBO_MaxClang.cpp; sourceTree = SOURCE_ROOT; };
+		E07D8D0FFC7ED387CD2EABC4 /* include_juce_audio_plugin_client_VST_utils.mm */ /* include_juce_audio_plugin_client_VST_utils.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_audio_plugin_client_VST_utils.mm; path = ../../JuceLibraryCode/include_juce_audio_plugin_client_VST_utils.mm; sourceTree = SOURCE_ROOT; };
+		E1DB3F5C5943C53F0476638E /* RNBO_OutletEvent.h */ /* RNBO_OutletEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_OutletEvent.h; path = ../../RnboExport/rnbo/src/RNBO_OutletEvent.h; sourceTree = SOURCE_ROOT; };
+		E212A320DDC17623823E55CF /* RNBO_ParameterEventQueue.h */ /* RNBO_ParameterEventQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_ParameterEventQueue.h; path = ../../RnboExport/rnbo/src/RNBO_ParameterEventQueue.h; sourceTree = SOURCE_ROOT; };
+		E2337F984B61AB2DF46EEBAB /* include_juce_audio_processors_ara.cpp */ /* include_juce_audio_processors_ara.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = include_juce_audio_processors_ara.cpp; path = ../../JuceLibraryCode/include_juce_audio_processors_ara.cpp; sourceTree = SOURCE_ROOT; };
+		E3C65A0C47DBCE805892F744 /* RNBODescriptionHeader.cmake */ /* RNBODescriptionHeader.cmake */ = {isa = PBXFileReference; lastKnownFileType = file.cmake; name = RNBODescriptionHeader.cmake; path = ../../RnboExport/rnbo/cmake/RNBODescriptionHeader.cmake; sourceTree = SOURCE_ROOT; };
+		E4248F5BAEFB600F91BF3F16 /* LICENSE.md */ /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; name = LICENSE.md; path = ../../RnboExport/rnbo/src/3rdparty/readerwriterqueue/LICENSE.md; sourceTree = SOURCE_ROOT; };
+		E48356899B79A11FBB835055 /* RNBO_BeatTimeEvent.h */ /* RNBO_BeatTimeEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_BeatTimeEvent.h; path = ../../RnboExport/rnbo/src/RNBO_BeatTimeEvent.h; sourceTree = SOURCE_ROOT; };
+		E4EB7D1D0DC4ABA4A06D7DA0 /* RNBO_MathFast.h */ /* RNBO_MathFast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_MathFast.h; path = ../../RnboExport/rnbo/common/RNBO_MathFast.h; sourceTree = SOURCE_ROOT; };
+		E51430551201E4A49E6C0319 /* RNBO_EventQueue.h */ /* RNBO_EventQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_EventQueue.h; path = ../../RnboExport/rnbo/src/RNBO_EventQueue.h; sourceTree = SOURCE_ROOT; };
+		E5B343F73245CA2A401681D8 /* juce_audio_basics */ /* juce_audio_basics */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_audio_basics; path = /Volumes/ssd/JUCE/modules/juce_audio_basics; sourceTree = "<absolute>"; };
+		E6E26208ACC316ABCF91ECFB /* CCache.cmake */ /* CCache.cmake */ = {isa = PBXFileReference; lastKnownFileType = file.cmake; name = CCache.cmake; path = ../../RnboExport/rnbo/cmake/CCache.cmake; sourceTree = SOURCE_ROOT; };
+		E867AE19AC2963067A6929EC /* RNBO_EventVariant.h */ /* RNBO_EventVariant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_EventVariant.h; path = ../../RnboExport/rnbo/src/RNBO_EventVariant.h; sourceTree = SOURCE_ROOT; };
+		EA9B05DE82318F22B060BD8A /* RNBO_AudioSignal.h */ /* RNBO_AudioSignal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_AudioSignal.h; path = ../../RnboExport/rnbo/common/RNBO_AudioSignal.h; sourceTree = SOURCE_ROOT; };
+		EB86ABDED2C4E4021D0E926B /* Foundation.framework */ /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EBB9942DB5D51EE478B25F91 /* PluginEditor.cpp */ /* PluginEditor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = PluginEditor.cpp; path = ../../Source/PluginEditor.cpp; sourceTree = SOURCE_ROOT; };
+		EC77FBACBDD81CFD04BD2002 /* RNBO_BaseInterface.h */ /* RNBO_BaseInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_BaseInterface.h; path = ../../RnboExport/rnbo/common/RNBO_BaseInterface.h; sourceTree = SOURCE_ROOT; };
+		EF53A27EDF78BB46C3C384A3 /* RNBO_CMath.h */ /* RNBO_CMath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_CMath.h; path = ../../RnboExport/rnbo/common/RNBO_CMath.h; sourceTree = SOURCE_ROOT; };
+		F16F14FC441DA48CA251D008 /* WebKit.framework */ /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		F37FF61798A678B9EFF2F18D /* RNBO_PatcherState.h */ /* RNBO_PatcherState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_PatcherState.h; path = ../../RnboExport/rnbo/src/RNBO_PatcherState.h; sourceTree = SOURCE_ROOT; };
+		F4EDC979D187D68DBEEF291A /* RNBO_ParameterInterfaceAsyncImpl.h */ /* RNBO_ParameterInterfaceAsyncImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_ParameterInterfaceAsyncImpl.h; path = ../../RnboExport/rnbo/src/RNBO_ParameterInterfaceAsyncImpl.h; sourceTree = SOURCE_ROOT; };
+		F853C557404E1FF4345F7A01 /* RNBO_CoreObject.h */ /* RNBO_CoreObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_CoreObject.h; path = ../../RnboExport/rnbo/src/RNBO_CoreObject.h; sourceTree = SOURCE_ROOT; };
+		F8C957D4236ED867368A6037 /* RNBO_NullPatcher.h */ /* RNBO_NullPatcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_NullPatcher.h; path = ../../RnboExport/rnbo/src/RNBO_NullPatcher.h; sourceTree = SOURCE_ROOT; };
+		FAD01CEF5CE910472F7FF6DF /* RNBO_Common.h */ /* RNBO_Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_Common.h; path = ../../RnboExport/rnbo/common/RNBO_Common.h; sourceTree = SOURCE_ROOT; };
+		FF364F14099643A0C68E5E1F /* RNBO_Logger.h */ /* RNBO_Logger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNBO_Logger.h; path = ../../RnboExport/rnbo/common/RNBO_Logger.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46DA517475ADFBE04F1DE29D = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F78C84BCF7971F406393A93,
+				104BE038BA3516CD0F7200E3,
+				8E2D81D812B295FD21A7397D,
+				20660150A5FF9E3AA91DAAE8,
+				5E87E012F5666F9C7D7DCD67,
+				D0BF8FA6A3AD9B577D598324,
+				3B1E343096F0516C17E82667,
+				A8745502315EC4F5B7C0AE92,
+				D8F27604320BE666A396BB3C,
+				09E980358A5BDABE34A61F25,
+				271C23455513B00CA488744B,
+				350305337144051067682276,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A58B5D4B9A9B55221DC74959 = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				104BE038BA3516CD0F7200E3,
+				8E2D81D812B295FD21A7397D,
+				20660150A5FF9E3AA91DAAE8,
+				5E87E012F5666F9C7D7DCD67,
+				D0BF8FA6A3AD9B577D598324,
+				3B1E343096F0516C17E82667,
+				A8745502315EC4F5B7C0AE92,
+				D8F27604320BE666A396BB3C,
+				09E980358A5BDABE34A61F25,
+				271C23455513B00CA488744B,
+				350305337144051067682276,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9F50920B60FACADC4FA4176 = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				104BE038BA3516CD0F7200E3,
+				8E2D81D812B295FD21A7397D,
+				20660150A5FF9E3AA91DAAE8,
+				5E87E012F5666F9C7D7DCD67,
+				D0BF8FA6A3AD9B577D598324,
+				3B1E343096F0516C17E82667,
+				A8745502315EC4F5B7C0AE92,
+				D8F27604320BE666A396BB3C,
+				09E980358A5BDABE34A61F25,
+				271C23455513B00CA488744B,
+				350305337144051067682276,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06A17C803DF80E607CB0E2D8 /* cmake */ = {
+			isa = PBXGroup;
+			children = (
+				E6E26208ACC316ABCF91ECFB,
+				4E49E30C68120ED957FBCA84,
+				9446E182D5D9FF6DB86DC04E,
+				35AFBC3C58B2CA1D7A3D3DC4,
+				3FE1B05F1FA2C3815BC2B670,
+				E3C65A0C47DBCE805892F744,
+				75F64B63BA0690E580639D4F,
+				ABFC1154E4ED7EDFF43F235D,
+			);
+			name = cmake;
+			sourceTree = "<group>";
+		};
+		0C2B31D53C235101CB89F014 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				930188224C48522B142A1E6E,
+			);
+			name = test;
+			sourceTree = "<group>";
+		};
+		27D61C990355822AFDCBD565 /* 3rdparty */ = {
+			isa = PBXGroup;
+			children = (
+				554B631A25BA5791ADB03FAA,
+				2B7E7FCC4BA8DE89AB12723C,
+				F1188E59DBDE3DC4FC1C8308,
+				B82C01D1A2B89DF57B270853,
+			);
+			name = 3rdparty;
+			sourceTree = "<group>";
+		};
+		2B7E7FCC4BA8DE89AB12723C /* json */ = {
+			isa = PBXGroup;
+			children = (
+				50A214BDD750245FF36FB48A,
+			);
+			name = json;
+			sourceTree = "<group>";
+		};
+		319E5DEC5756701AC336A724 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42CDC73D08AE1D7476A76AE0,
+				16ACBEE2F9CC7C3F82CCE1AF,
+				87C4439399A1F30B2EDC0FC0,
+				041AFDCEA600C514525027FC,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4E88A18C967E4019798F2997 /* rnbo */ = {
+			isa = PBXGroup;
+			children = (
+				C95869EF3FE92F9723B412CA,
+				06A17C803DF80E607CB0E2D8,
+				DF84FDB9284F6B2F742CE3DF,
+				D0C2F7F03D241D54D0EF1DA5,
+				8A1B7456A6A92260B271BB92,
+				0C2B31D53C235101CB89F014,
+				B02EA2D626BE50D2A47FCB6F,
+				050077901E694B05972F3453,
+				A00E22A4CFB4F46A65A6069D,
+				03A146C9A0E8538D01ED0A80,
+			);
+			name = rnbo;
+			sourceTree = "<group>";
+		};
+		554B631A25BA5791ADB03FAA /* concurrentqueue */ = {
+			isa = PBXGroup;
+			children = (
+				FC4A43153BAF16BDDE742810,
+				512328D8F950FEDEC9386000,
+				11B3EFC8B0D1FA223DDBBE1F,
+				480648E5AC3180239EC44915,
+				2A80C0D2E2073BBB0A06CFD8,
+			);
+			name = concurrentqueue;
+			sourceTree = "<group>";
+		};
+		6674EA83D47029F714983548 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AA5BEBA6122589A83ECE6E48,
+				239B690C490FAD7A4DCB118C,
+				692654BD3742F403DB95A1E1,
+				30C99BC48226D79100200C5B,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		6A1C3A65CBC91348A823C568 /* JUCE Modules */ = {
+			isa = PBXGroup;
+			children = (
+				E5B343F73245CA2A401681D8,
+				7A9E145DFD006671BDA81979,
+				6CF0EFA7DA62035A0F91C4F5,
+				008A86B61A94A98F08E6761D,
+				792621871AA4C4E089682BB5,
+				DA9A84241EF4983F5B5FB562,
+				B2B5CFBF9A2EA4A715115338,
+				C1BB994ACC4CF824E368419A,
+				C1D7B6B557249CD2764834F9,
+				DF468387415401063681135A,
+				6F9D869BF9DBC03A8A1B7DE9,
+				7BAA3497D97951B0D431EFC0,
+			);
+			name = "JUCE Modules";
+			sourceTree = "<group>";
+		};
+		6CE97832EE34547CAF273A56 /* stdlib */ = {
+			isa = PBXGroup;
+			children = (
+				5E68882A546A03C5991CCC01,
+			);
+			name = stdlib;
+			sourceTree = "<group>";
+		};
+		759131A0A380D0A3EC1EED28 /* wasm */ = {
+			isa = PBXGroup;
+			children = (
+				1FF6D1B12824450B967A183D,
+			);
+			name = wasm;
+			sourceTree = "<group>";
+		};
+		7D9F18B0BAC03B483CC8C91E /* platforms */ = {
+			isa = PBXGroup;
+			children = (
+				9C8B4483225DD8D55612EEA7,
+				6CE97832EE34547CAF273A56,
+			);
+			name = platforms;
+			sourceTree = "<group>";
+		};
+		8A1B7456A6A92260B271BB92 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				27D61C990355822AFDCBD565,
+				7D9F18B0BAC03B483CC8C91E,
+				6A37E8378F9E5F5600B59EBE,
+				E48356899B79A11FBB835055,
+				42C7C052CFDB222BD7F5AE9A,
+				801A867489772E20D2437F34,
+				8F39C415C04C810FB99D4C78,
+				49D2CCE9B10EB882D809AB66,
+				F853C557404E1FF4345F7A01,
+				2DA838A68F3ECBB71FA3AEC3,
+				487666CD29ADE23BE5DEFE4F,
+				DEF1EF2F0E605287FED6CD25,
+				05DE25DA9547026CB4C79B2B,
+				03FD13FBA0D5BAC245CE84AC,
+				9FD097353CE23945F42B7239,
+				6BE3082D2C2F177E4A6BAA3F,
+				DEC6F78E9FF85F3F91F620D7,
+				932FEAC800DD12A7D953AB38,
+				B7B8ADD7F5A1D114E3716DFE,
+				0F92F14ACA279F99F17C9E45,
+				CE1A0F1EF5677212B8FD7A36,
+				427CDAA44301A33B83588DD8,
+				E51430551201E4A49E6C0319,
+				4F1ED558830FF9623EB90754,
+				E867AE19AC2963067A6929EC,
+				A8F9B4B86877F50E08C295AD,
+				C07E6E25A8F035CE0C6F9BF1,
+				405949C2BB8CC9536E3CECE9,
+				7CE2926018B2143B0BD9F3FE,
+				DEBD3393559B20433A3C216D,
+				A36459A32BF7A5D2B8B547FB,
+				AAF93C971BD5006CC4792084,
+				C05C5FE8EABCB459241C63FB,
+				E02478A1CF0F9679C122D76C,
+				C0E9CE6C40FF5DABF9AC999D,
+				470B7FA28AB742A50C507076,
+				97F416FECFA480F2DD7AE6E2,
+				8F57CAAE5176C045508C13A9,
+				F8C957D4236ED867368A6037,
+				E1DB3F5C5943C53F0476638E,
+				4C22CCF1FD29068467FA6FD6,
+				B42E369D5231954A21DBAB9F,
+				E212A320DDC17623823E55CF,
+				71F65992677C99303F762CD2,
+				0D8E27C703A8EA0716A58DA6,
+				F4EDC979D187D68DBEEF291A,
+				274A4D0AAD49C7BD1DFA0F72,
+				087130B3E7ED77047145ACB0,
+				C63A09E67AE7511044BEA9D4,
+				15D94271CF715532E5FDB67E,
+				483301ABF80E737D5DCEC7FE,
+				9F8F01FA3C68DF15711AAAD2,
+				F37FF61798A678B9EFF2F18D,
+				10BDAAC9C1E020064BBBE38C,
+				6EC295D4C12786874CAB461C,
+				DE0722879EFAE30B1CE99078,
+				647A92EB7369A474FF2D626A,
+				4E349FD0303E4C2A8E2C25C4,
+				200865519C512C302BB13B32,
+				0840BFB9CB88D6D4C1F75FE2,
+				743BB1543009BAECE279A18E,
+				A3131A1B1DAE801DA52C9C1E,
+				1297A574557942A509B0F0B7,
+				608F5C3CCDB3F1E04C6551FD,
+				7AC8FE1AE703B3116B100468,
+				359F98579C6E93CA7CFC8438,
+				1E113C9BBBEFF860621EA033,
+				80749D72E1CD71357501730C,
+				C23FE3CFFEBAFEB87BA9E4D8,
+				191C6022CF00744178440868,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		98B270654DB5CC2CDE8DF448 /* RnboExport */ = {
+			isa = PBXGroup;
+			children = (
+				4E88A18C967E4019798F2997,
+				7FB54858561259F198C9D2FB,
+				7BDFFB30D45950E777FBE8E3,
+				0F3692B7994CBDE008147A2D,
+				B805734E39833DAE2B80ACCE,
+			);
+			name = RnboExport;
+			sourceTree = "<group>";
+		};
+		9BE7CD156D8F56EA73C97146 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				D8FA204D1AE3120C601E1B3A,
+				6A1C3A65CBC91348A823C568,
+				B3B45AF01D614E52320E74B7,
+				6674EA83D47029F714983548,
+				FD32FE8431253D023D6254E4,
+				319E5DEC5756701AC336A724,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		9C8B4483225DD8D55612EEA7 /* nostdlib */ = {
+			isa = PBXGroup;
+			children = (
+				D1ED45E450C82458DC278D48,
+				58B10C5AC6614DC21902DCDD,
+			);
+			name = nostdlib;
+			sourceTree = "<group>";
+		};
+		9F6B383248540D8F9AAAA88C /* rnbo_external_wrapper */ = {
+			isa = PBXGroup;
+			children = (
+				1F27723F6096E721ABBB8B96,
+			);
+			name = rnbo_external_wrapper;
+			sourceTree = "<group>";
+		};
+		B3B45AF01D614E52320E74B7 /* JUCE Library Code */ = {
+			isa = PBXGroup;
+			children = (
+				1C2920A93A7A1B67B1BE01DE,
+				73494B31C3DE4780453D6FD7,
+				18C7D202CBA500270BFCFC58,
+				C5F653F14A11D63EB1FC5BE6,
+				DFCD127E5376FB40DB67A025,
+				74E40F90A9928CD90CCEBE37,
+				DC5CC75445FF19F64E8C62E1,
+				4950E709C192E456F9A545ED,
+				1170DEE98D633B63C52B9B29,
+				256FC207C87AADB3917C6EE0,
+				98C80797C4330570C03C12C3,
+				E07D8D0FFC7ED387CD2EABC4,
+				5C4B079492E84595314EFE80,
+				1A97B7535F366FED936C4349,
+				E2337F984B61AB2DF46EEBAB,
+				2CBE984811F3B34F6C570BC3,
+				2CBC4D6E35F9D0804B3CA717,
+				DF0269BE5D3F86230021F606,
+				D4CD614744399D90232F576A,
+				61226AD58C78D73922753ACF,
+				D207C66B7CF3E450C4F7E76C,
+				4696F49401113A1AE18C4F73,
+				D56CFA044D8CF9EFF146A664,
+				67AF951DE477ED082B888D9C,
+				06D32A15D458FF6865A59EE2,
+			);
+			name = "JUCE Library Code";
+			sourceTree = "<group>";
+		};
+		B82C01D1A2B89DF57B270853 /* readerwriterqueue */ = {
+			isa = PBXGroup;
+			children = (
+				AE7FDDDCB9CBFBA246BA3485,
+				E4248F5BAEFB600F91BF3F16,
+				B47E6C3FC814DA44A528D043,
+			);
+			name = readerwriterqueue;
+			sourceTree = "<group>";
+		};
+		C95869EF3FE92F9723B412CA /* adapters */ = {
+			isa = PBXGroup;
+			children = (
+				F0DD86C88E55FC2CB5027B0D,
+				EC7BC7A1B9BC76CF531C4788,
+				759131A0A380D0A3EC1EED28,
+			);
+			name = adapters;
+			sourceTree = "<group>";
+		};
+		CA9ACB1D86D915C99986FE3E /* staticplugin */ = {
+			isa = PBXGroup;
+			children = (
+				446F4ECD7F553B38FD28CD7A,
+				4A351179E70453FD4D61A71F,
+				5741B71426F5B3F7671E7398,
+				7F8B7DD6A03DCD0A81D40B2A,
+				D14082C0AFA66772D3815BE3,
+				333D0D7A09BAC8D77915F21F,
+				D6C5D8F399D874C58E91A25F,
+				1B0C4A5E06E92FAEE00E5A0E,
+			);
+			name = staticplugin;
+			sourceTree = "<group>";
+		};
+		D0C2F7F03D241D54D0EF1DA5 /* externals */ = {
+			isa = PBXGroup;
+			children = (
+				DCE4A8DDCDB7F361A1EF16B5,
+				9A07C32461F3A3155DC72F02,
+				9383E1E4BBF00AEFC2673993,
+			);
+			name = externals;
+			sourceTree = "<group>";
+		};
+		D8FA204D1AE3120C601E1B3A /* JuceRnboShimmerReverb */ = {
+			isa = PBXGroup;
+			children = (
+				98B270654DB5CC2CDE8DF448,
+				FC34954ABB0A46D0B908622F,
+			);
+			name = JuceRnboShimmerReverb;
+			sourceTree = "<group>";
+		};
+		DF84FDB9284F6B2F742CE3DF /* common */ = {
+			isa = PBXGroup;
+			children = (
+				C2F0E87800073CFFC194F2AC,
+				EA9B05DE82318F22B060BD8A,
+				EC77FBACBDD81CFD04BD2002,
+				EF53A27EDF78BB46C3C384A3,
+				FAD01CEF5CE910472F7FF6DF,
+				C3AF8C0B7EE2C1852567AD48,
+				4D28603BEF0F74C5435A336E,
+				21DBA5547B397FEAB0C43798,
+				43438FEFAB89DAA942EA6814,
+				4E09DCC0EBFB8491B92E29D7,
+				37211ACC0BBDCDA4349A990E,
+				82473326823DC6CAF0955B08,
+				3E57BC1D1A9B974B9B9C145D,
+				3F0078D942820FAE7191B194,
+				33CC2937F9FBE9F7D2B95B9F,
+				FF364F14099643A0C68E5E1F,
+				412859DE49F14D2758E4E0E5,
+				E4EB7D1D0DC4ABA4A06D7DA0,
+				77DEDB6196C34FBC66968BF2,
+				4FE9851BA2BE039535A1CFEA,
+				1DDBE5A2FE84215F802F5256,
+				41EFCB7198D26DC3A6787D92,
+				14B7B000619E506D8D36188D,
+				3ABFD17D0C60ADC21AEEE6A8,
+				551155C5AB24EB26221D4167,
+				1BA5B05445A38670BE989112,
+				68FE5B2171C7F1C0B75171D8,
+				D059DB2C8AB4B893B38FD689,
+				08E5E5E069093F94A23E0F19,
+				60D67B3A23FB53F552C39698,
+				A64EF8157682AFC4A9C78640,
+				1AA3A9BD200386E48C29C0DF,
+				342DCE6347AE77E48C3EFC65,
+				CD5F7CF63545627011359A9C,
+			);
+			name = common;
+			sourceTree = "<group>";
+		};
+		E44671842AAB39EABE3E18BC /* external */ = {
+			isa = PBXGroup;
+			children = (
+				9F6B383248540D8F9AAAA88C,
+			);
+			name = external;
+			sourceTree = "<group>";
+		};
+		EC7BC7A1B9BC76CF531C4788 /* max */ = {
+			isa = PBXGroup;
+			children = (
+				E44671842AAB39EABE3E18BC,
+				7160324562D7F6C2932CB421,
+				2B8AC71ABC77AD9E79D69C12,
+				7A80B45A05BC061BC7BDFB7E,
+				58D96C8F1A53DD6031A781A6,
+			);
+			name = max;
+			sourceTree = "<group>";
+		};
+		F0DD86C88E55FC2CB5027B0D /* juce */ = {
+			isa = PBXGroup;
+			children = (
+				CA9ACB1D86D915C99986FE3E,
+				57967C15ADA19775D1D094EE,
+				4EF3A211D9994163C40103BE,
+				BCD964269915FD3B6CCBB624,
+				909B7520F8194F9E821876D7,
+				84615111975C332C80F3AAEA,
+				269C9AB3533991DB4A7179CA,
+			);
+			name = juce;
+			sourceTree = "<group>";
+		};
+		F1188E59DBDE3DC4FC1C8308 /* MPark_variant */ = {
+			isa = PBXGroup;
+			children = (
+				50CE71386AACBE02A6170556,
+			);
+			name = MPark_variant;
+			sourceTree = "<group>";
+		};
+		FC34954ABB0A46D0B908622F /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				5215801D19F103A452C3151C,
+				CC57B592A51C80B204E35129,
+				B4EACC32CA371F95EB4F92CB,
+				EBB9942DB5D51EE478B25F91,
+				673ED6BB36EC16800D618D74,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		FC4A43153BAF16BDDE742810 /* internal */ = {
+			isa = PBXGroup;
+			children = (
+				A305D728C10582F08326DD10,
+			);
+			name = internal;
+			sourceTree = "<group>";
+		};
+		FD32FE8431253D023D6254E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B1BC0230441456D4AC50BE8,
+				9B53BBA9FE4FFE106DE3D3A5,
+				1605F2C1FDD8AD1FE2134D32,
+				515969FE888F100165C0F66A,
+				35DA321D5F663ABF9B7AF82C,
+				D05A3A38B468D1D93A094F52,
+				36B662829748E75669D246DE,
+				6C76EB85CAF4C68B0144E1B8,
+				EB86ABDED2C4E4021D0E926B,
+				49B6E3FCD7FD45D5BE37B3F6,
+				C76C64CAB3CA59AB01EBB6F8,
+				F16F14FC441DA48CA251D008,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		60B8D51413F6747D3EFA24AA /* JuceRnboShimmerReverb - Standalone Plugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE936CC21BB6F2CE1DFC292A;
+			buildPhases = (
+				22428936BD184235AAE2CDE7,
+				3E462922B6ACCE6DFDABE985,
+				A58B5D4B9A9B55221DC74959,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA8B6F611E74AE8545BE9416,
+			);
+			name = "JuceRnboShimmerReverb - Standalone Plugin";
+			productName = JuceRnboShimmerReverb;
+			productReference = 87C4439399A1F30B2EDC0FC0;
+			productType = "com.apple.product-type.application";
+		};
+		6B61A1682F6705E0E291C83D /* JuceRnboShimmerReverb - Shared Code */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91226EEB9E43CB47EEAE31D2;
+			buildPhases = (
+				282D02A6A0C4E07B68D761C4,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "JuceRnboShimmerReverb - Shared Code";
+			productName = JuceRnboShimmerReverb;
+			productReference = 041AFDCEA600C514525027FC;
+			productType = "com.apple.product-type.library.static";
+		};
+		8576FBA36B047DDC9758E9CB /* JuceRnboShimmerReverb - VST3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EA866C511262D8C178DBA59;
+			buildPhases = (
+				0DD50A47FC43444D338C94CB,
+				92EE1FE24D885E9B0BE7ED58,
+				F9F50920B60FACADC4FA4176,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF78BDC7F7F92BA21D2DAA4A,
+			);
+			name = "JuceRnboShimmerReverb - VST3";
+			productName = JuceRnboShimmerReverb;
+			productReference = 42CDC73D08AE1D7476A76AE0;
+			productType = "com.apple.product-type.bundle";
+		};
+		B122E9B423ABF986FEAF3B22 /* JuceRnboShimmerReverb - AU */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 660CA1D24A3A89EFA3986BB2;
+			buildPhases = (
+				7A843790015F1B7B827649C9,
+				731FBE11DDE829452C9BE17E,
+				909241ADAB3E889BE77E858C,
+				46DA517475ADFBE04F1DE29D,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5EA92082DD2EFD472D128B23,
+			);
+			name = "JuceRnboShimmerReverb - AU";
+			productName = JuceRnboShimmerReverb;
+			productReference = 16ACBEE2F9CC7C3F82CCE1AF;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1AFA549D4641D736AAE8F694 = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1340;
+				ORGANIZATIONNAME = "";
+				TargetAttributes = {
+					60B8D51413F6747D3EFA24AA = {
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+							com.apple.HardenedRuntime = {
+								enabled = 0;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 0;
+							};
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+					6B61A1682F6705E0E291C83D = {
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+							com.apple.HardenedRuntime = {
+								enabled = 0;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 0;
+							};
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+					6CC0AFD66F87FA3CA593A4E7 = {
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+							com.apple.HardenedRuntime = {
+								enabled = 0;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 0;
+							};
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+					8576FBA36B047DDC9758E9CB = {
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+							com.apple.HardenedRuntime = {
+								enabled = 0;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 0;
+							};
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+					B122E9B423ABF986FEAF3B22 = {
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+							com.apple.HardenedRuntime = {
+								enabled = 0;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 0;
+							};
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 3EA6FD5F6F35757D442A6BAC;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9BE7CD156D8F56EA73C97146;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6CC0AFD66F87FA3CA593A4E7,
+				8576FBA36B047DDC9758E9CB,
+				B122E9B423ABF986FEAF3B22,
+				60B8D51413F6747D3EFA24AA,
+				6B61A1682F6705E0E291C83D,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0DD50A47FC43444D338C94CB = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC33DB6B3C66CA206E896AA3,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22428936BD184235AAE2CDE7 = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC33DB6B3C66CA206E896AA3,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A843790015F1B7B827649C9 = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC33DB6B3C66CA206E896AA3,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		731FBE11DDE829452C9BE17E = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DFCAC936C6FB04BCD98AEE2,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		282D02A6A0C4E07B68D761C4 = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05DB563C4FC66D456E8B00EA,
+				FFEB54BF4EDFEA21C2FD4053,
+				1D8C8F0EE493D793834A1694,
+				CE871D04A153DF8C437804D6,
+				F7F48FACB7626396DB27D117,
+				9284F214724449E04E3779DF,
+				A79F02788014144B1995E545,
+				E922080B6BB6F02F2442C6A3,
+				FBD240150EBC2B28251B79D2,
+				F412B292922980DE9545AF78,
+				D7AB524D0DBDAA8B16CC2F73,
+				E4B2A73A9C012146C42E8AA9,
+				5B3A15B23C30E5EE415A6C86,
+				5B4FA017FF7EF303A9FE6336,
+				3925C3AE7B0D686280D38D5E,
+				C9587B6852C5D000ECE26F96,
+				D4E2C25EEF24F093A85758E2,
+				D6E14D174C7B251542D76DDA,
+				17AA6F8778F56B8B80A38A49,
+				8C6AE439489405085EE5D254,
+				3D2153BFF156A8FD9DAFCAFD,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E462922B6ACCE6DFDABE985 = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F142AC9F8D3DC5E7D5FF8C70,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		909241ADAB3E889BE77E858C = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99E13540B12B9BA570BEFA50,
+				AAFB29C841D2D711819F5714,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92EE1FE24D885E9B0BE7ED58 = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5795E9195ABDD6D5314708B6,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3EB91664FC5BDB9C2D769200 = {
+			isa = PBXTargetDependency;
+			target = 8576FBA36B047DDC9758E9CB;
+		};
+		5EA92082DD2EFD472D128B23 = {
+			isa = PBXTargetDependency;
+			target = 6B61A1682F6705E0E291C83D;
+		};
+		A8B28D2E095EDFFBC7BF8DDD = {
+			isa = PBXTargetDependency;
+			target = 6B61A1682F6705E0E291C83D;
+		};
+		BA8B6F611E74AE8545BE9416 = {
+			isa = PBXTargetDependency;
+			target = 6B61A1682F6705E0E291C83D;
+		};
+		CF78BDC7F7F92BA21D2DAA4A = {
+			isa = PBXTargetDependency;
+			target = 6B61A1682F6705E0E291C83D;
+		};
+		D0D2712D31F20087F964F86C = {
+			isa = PBXTargetDependency;
+			target = 60B8D51413F6747D3EFA24AA;
+		};
+		DD52C5B67FEAA6BC406694C3 = {
+			isa = PBXTargetDependency;
+			target = B122E9B423ABF986FEAF3B22;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		11E1324513BCD911534DB6C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
+				COPY_PHASE_STRIP = NO;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = /;
+				EXCLUDED_ARCHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_DEBUG=1",
+					"DEBUG=1",
+					"JUCE_DISPLAY_SPLASH_SCREEN=1",
+					"JUCE_USE_DARK_SPLASH_SCREEN=1",
+					"JUCE_PROJUCER_VERSION=0x70002",
+					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_processors=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_utils=1",
+					"JUCE_MODULE_AVAILABLE_juce_core=1",
+					"JUCE_MODULE_AVAILABLE_juce_data_structures=1",
+					"JUCE_MODULE_AVAILABLE_juce_events=1",
+					"JUCE_MODULE_AVAILABLE_juce_graphics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_extra=1",
+					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
+					"JUCE_VST3_CAN_REPLACE_VST2=0",
+					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
+					"JucePlugin_Build_VST=0",
+					"JucePlugin_Build_VST3=0",
+					"JucePlugin_Build_AU=1",
+					"JucePlugin_Build_AUv3=0",
+					"JucePlugin_Build_AAX=0",
+					"JucePlugin_Build_Standalone=0",
+					"JucePlugin_Build_Unity=0",
+					"JucePlugin_Build_LV2=0",
+					"JucePlugin_Enable_IAA=0",
+					"JucePlugin_Enable_ARA=0",
+					"JucePlugin_Name=\\\"JuceRnboShimmerReverb\\\"",
+					"JucePlugin_Desc=\\\"JuceRnboShimmerReverb\\\"",
+					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
+					"JucePlugin_ManufacturerWebsite=\\\"www.yourcompany.com\\\"",
+					"JucePlugin_ManufacturerEmail=\\\"\\\"",
+					"JucePlugin_ManufacturerCode=0x4d616e75",
+					"JucePlugin_PluginCode=0x42716977",
+					"JucePlugin_IsSynth=0",
+					"JucePlugin_WantsMidiInput=0",
+					"JucePlugin_ProducesMidiOutput=0",
+					"JucePlugin_IsMidiEffect=0",
+					"JucePlugin_EditorRequiresKeyboardFocus=0",
+					"JucePlugin_Version=1.0.0",
+					"JucePlugin_VersionCode=0x10000",
+					"JucePlugin_VersionString=\\\"1.0.0\\\"",
+					"JucePlugin_VSTUniqueID=JucePlugin_PluginCode",
+					"JucePlugin_VSTCategory=kPlugCategEffect",
+					"JucePlugin_Vst3Category=\\\"Fx\\\"",
+					"JucePlugin_AUMainType=\\'aufx\\'",
+					"JucePlugin_AUSubType=JucePlugin_PluginCode",
+					"JucePlugin_AUExportPrefix=JuceRnboShimmerReverbAU",
+					"JucePlugin_AUExportPrefixQuoted=\\\"JuceRnboShimmerReverbAU\\\"",
+					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_CFBundleIdentifier=com.yourcompany.JuceRnboShimmerReverb",
+					"JucePlugin_AAXIdentifier=com.yourcompany.JuceRnboShimmerReverb",
+					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
+					"JucePlugin_AAXCategory=0",
+					"JucePlugin_AAXDisableBypass=0",
+					"JucePlugin_AAXDisableMultiMono=0",
+					"JucePlugin_IAAType=0x61757278",
+					"JucePlugin_IAASubType=JucePlugin_PluginCode",
+					"JucePlugin_IAAName=\\\"yourcompany:\\ JuceRnboShimmerReverb\\\"",
+					"JucePlugin_VSTNumMidiInputs=16",
+					"JucePlugin_VSTNumMidiOutputs=16",
+					"JucePlugin_ARAContentTypes=0",
+					"JucePlugin_ARATransformationFlags=0",
+					"JucePlugin_ARAFactoryID=\\\"com.yourcompany.JuceRnboShimmerReverb.factory\\\"",
+					"JucePlugin_ARADocumentArchiveID=\\\"com.yourcompany.JuceRnboShimmerReverb.aradocumentarchive.1.0.0\\\"",
+					"JucePlugin_ARACompatibleArchiveIDs=\\\"\\\"",
+					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
+					"JUCER_XCODE_MAC_F6D2F4CF=1",
+					"JUCE_APP_VERSION=1.0.0",
+					"JUCE_APP_VERSION_HEX=0x10000",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"/Volumes/ssd/JUCE/modules/juce_audio_processors/format_types/VST3_SDK",
+					"/Volumes/ssd/VST_SDK/vst3sdk",
+					"$(SRCROOT)/../../JuceLibraryCode",
+					"/Volumes/ssd/JUCE/modules",
+					"$(PROJECT_DIR)/../../RnboExport/rnbo",
+					"$(PROJECT_DIR)/../../RnboExport/rnbo/common",
+					"/Volumes/ssd/JUCE/modules/juce_audio_plugin_client",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Info-AU.plist;
+				INFOPLIST_PREPROCESS = NO;
+				INSTALL_PATH = "$(HOME)/Library/Audio/Plug-Ins/Components/";
+				LIBRARY_STYLE = Bundle;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_HEADER_SEARCH_PATHS = "/Volumes/ssd/JUCE/modules/juce_audio_processors/format_types/VST3_SDK /Volumes/ssd/VST_SDK/vst3sdk $(SRCROOT)/../../JuceLibraryCode /Volumes/ssd/JUCE/modules $(PROJECT_DIR)/../../RnboExport/rnbo $(PROJECT_DIR)/../../RnboExport/rnbo/common /Volumes/ssd/JUCE/modules/juce_audio_plugin_client";
+				OTHER_LDFLAGS = "-bundle -lJuceRnboTemplate -weak_framework Metal -weak_framework MetalKit";
+				OTHER_REZFLAGS = "-d ppc_$ppc -d i386_$i386 -d ppc64_$ppc64 -d x86_64_$x86_64 -d arm64_$arm64 -I /System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Versions/A/Headers -I \"$(DEVELOPER_DIR)/Extras/CoreAudio/AudioUnits/AUPublic/AUBase\" -I \"$(DEVELOPER_DIR)/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/AudioUnit.framework/Headers\"";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.JuceRnboShimmerReverb;
+				PRODUCT_NAME = "JuceRnboTemplate";
+				USE_HEADERMAP = NO;
+				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
+				WRAPPER_EXTENSION = component;
+			};
+			name = Debug;
+		};
+		1F9543ABA5E6199425A5C171 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = NO;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "JuceRnboTemplate";
+				SDKROOT = macosx;
+				WARNING_CFLAGS = "-Wreorder";
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		33C7F2E1C046D1F3BB15A90E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		41194E9E02C46B135A30E0B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
+				DEAD_CODE_STRIPPING = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = /;
+				EXCLUDED_ARCHS = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_NDEBUG=1",
+					"NDEBUG=1",
+					"JUCE_DISPLAY_SPLASH_SCREEN=1",
+					"JUCE_USE_DARK_SPLASH_SCREEN=1",
+					"JUCE_PROJUCER_VERSION=0x70002",
+					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_processors=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_utils=1",
+					"JUCE_MODULE_AVAILABLE_juce_core=1",
+					"JUCE_MODULE_AVAILABLE_juce_data_structures=1",
+					"JUCE_MODULE_AVAILABLE_juce_events=1",
+					"JUCE_MODULE_AVAILABLE_juce_graphics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_extra=1",
+					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
+					"JUCE_VST3_CAN_REPLACE_VST2=0",
+					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
+					"JucePlugin_Build_VST=0",
+					"JucePlugin_Build_VST3=0",
+					"JucePlugin_Build_AU=1",
+					"JucePlugin_Build_AUv3=0",
+					"JucePlugin_Build_AAX=0",
+					"JucePlugin_Build_Standalone=0",
+					"JucePlugin_Build_Unity=0",
+					"JucePlugin_Build_LV2=0",
+					"JucePlugin_Enable_IAA=0",
+					"JucePlugin_Enable_ARA=0",
+					"JucePlugin_Name=\\\"JuceRnboShimmerReverb\\\"",
+					"JucePlugin_Desc=\\\"JuceRnboShimmerReverb\\\"",
+					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
+					"JucePlugin_ManufacturerWebsite=\\\"www.yourcompany.com\\\"",
+					"JucePlugin_ManufacturerEmail=\\\"\\\"",
+					"JucePlugin_ManufacturerCode=0x4d616e75",
+					"JucePlugin_PluginCode=0x42716977",
+					"JucePlugin_IsSynth=0",
+					"JucePlugin_WantsMidiInput=0",
+					"JucePlugin_ProducesMidiOutput=0",
+					"JucePlugin_IsMidiEffect=0",
+					"JucePlugin_EditorRequiresKeyboardFocus=0",
+					"JucePlugin_Version=1.0.0",
+					"JucePlugin_VersionCode=0x10000",
+					"JucePlugin_VersionString=\\\"1.0.0\\\"",
+					"JucePlugin_VSTUniqueID=JucePlugin_PluginCode",
+					"JucePlugin_VSTCategory=kPlugCategEffect",
+					"JucePlugin_Vst3Category=\\\"Fx\\\"",
+					"JucePlugin_AUMainType=\\'aufx\\'",
+					"JucePlugin_AUSubType=JucePlugin_PluginCode",
+					"JucePlugin_AUExportPrefix=JuceRnboShimmerReverbAU",
+					"JucePlugin_AUExportPrefixQuoted=\\\"JuceRnboShimmerReverbAU\\\"",
+					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_CFBundleIdentifier=com.yourcompany.JuceRnboShimmerReverb",
+					"JucePlugin_AAXIdentifier=com.yourcompany.JuceRnboShimmerReverb",
+					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
+					"JucePlugin_AAXCategory=0",
+					"JucePlugin_AAXDisableBypass=0",
+					"JucePlugin_AAXDisableMultiMono=0",
+					"JucePlugin_IAAType=0x61757278",
+					"JucePlugin_IAASubType=JucePlugin_PluginCode",
+					"JucePlugin_IAAName=\\\"yourcompany:\\ JuceRnboShimmerReverb\\\"",
+					"JucePlugin_VSTNumMidiInputs=16",
+					"JucePlugin_VSTNumMidiOutputs=16",
+					"JucePlugin_ARAContentTypes=0",
+					"JucePlugin_ARATransformationFlags=0",
+					"JucePlugin_ARAFactoryID=\\\"com.yourcompany.JuceRnboShimmerReverb.factory\\\"",
+					"JucePlugin_ARADocumentArchiveID=\\\"com.yourcompany.JuceRnboShimmerReverb.aradocumentarchive.1.0.0\\\"",
+					"JucePlugin_ARACompatibleArchiveIDs=\\\"\\\"",
+					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
+					"JUCER_XCODE_MAC_F6D2F4CF=1",
+					"JUCE_APP_VERSION=1.0.0",
+					"JUCE_APP_VERSION_HEX=0x10000",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"/Volumes/ssd/JUCE/modules/juce_audio_processors/format_types/VST3_SDK",
+					"/Volumes/ssd/VST_SDK/vst3sdk",
+					"$(SRCROOT)/../../JuceLibraryCode",
+					"/Volumes/ssd/JUCE/modules",
+					"$(PROJECT_DIR)/../../RnboExport/rnbo",
+					"$(PROJECT_DIR)/../../RnboExport/rnbo/common",
+					"/Volumes/ssd/JUCE/modules/juce_audio_plugin_client",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Info-AU.plist;
+				INFOPLIST_PREPROCESS = NO;
+				INSTALL_PATH = "$(HOME)/Library/Audio/Plug-Ins/Components/";
+				LIBRARY_STYLE = Bundle;
+				LLVM_LTO = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_HEADER_SEARCH_PATHS = "/Volumes/ssd/JUCE/modules/juce_audio_processors/format_types/VST3_SDK /Volumes/ssd/VST_SDK/vst3sdk $(SRCROOT)/../../JuceLibraryCode /Volumes/ssd/JUCE/modules $(PROJECT_DIR)/../../RnboExport/rnbo $(PROJECT_DIR)/../../RnboExport/rnbo/common /Volumes/ssd/JUCE/modules/juce_audio_plugin_client";
+				OTHER_LDFLAGS = "-bundle -lJuceRnboTemplate -weak_framework Metal -weak_framework MetalKit";
+				OTHER_REZFLAGS = "-d ppc_$ppc -d i386_$i386 -d ppc64_$ppc64 -d x86_64_$x86_64 -d arm64_$arm64 -I /System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Versions/A/Headers -I \"$(DEVELOPER_DIR)/Extras/CoreAudio/AudioUnits/AUPublic/AUBase\" -I \"$(DEVELOPER_DIR)/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/AudioUnit.framework/Headers\"";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.JuceRnboShimmerReverb;
+				PRODUCT_NAME = "JuceRnboTemplate";
+				USE_HEADERMAP = NO;
+				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
+				WRAPPER_EXTENSION = component;
+			};
+			name = Release;
+		};
+		8298B53942E67E3AC00C4915 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
+				DEAD_CODE_STRIPPING = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = /;
+				EXCLUDED_ARCHS = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_NDEBUG=1",
+					"NDEBUG=1",
+					"JUCE_DISPLAY_SPLASH_SCREEN=1",
+					"JUCE_USE_DARK_SPLASH_SCREEN=1",
+					"JUCE_PROJUCER_VERSION=0x70002",
+					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_processors=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_utils=1",
+					"JUCE_MODULE_AVAILABLE_juce_core=1",
+					"JUCE_MODULE_AVAILABLE_juce_data_structures=1",
+					"JUCE_MODULE_AVAILABLE_juce_events=1",
+					"JUCE_MODULE_AVAILABLE_juce_graphics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_extra=1",
+					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
+					"JUCE_VST3_CAN_REPLACE_VST2=0",
+					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
+					"JucePlugin_Build_VST=0",
+					"JucePlugin_Build_VST3=1",
+					"JucePlugin_Build_AU=0",
+					"JucePlugin_Build_AUv3=0",
+					"JucePlugin_Build_AAX=0",
+					"JucePlugin_Build_Standalone=0",
+					"JucePlugin_Build_Unity=0",
+					"JucePlugin_Build_LV2=0",
+					"JucePlugin_Enable_IAA=0",
+					"JucePlugin_Enable_ARA=0",
+					"JucePlugin_Name=\\\"JuceRnboShimmerReverb\\\"",
+					"JucePlugin_Desc=\\\"JuceRnboShimmerReverb\\\"",
+					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
+					"JucePlugin_ManufacturerWebsite=\\\"www.yourcompany.com\\\"",
+					"JucePlugin_ManufacturerEmail=\\\"\\\"",
+					"JucePlugin_ManufacturerCode=0x4d616e75",
+					"JucePlugin_PluginCode=0x42716977",
+					"JucePlugin_IsSynth=0",
+					"JucePlugin_WantsMidiInput=0",
+					"JucePlugin_ProducesMidiOutput=0",
+					"JucePlugin_IsMidiEffect=0",
+					"JucePlugin_EditorRequiresKeyboardFocus=0",
+					"JucePlugin_Version=1.0.0",
+					"JucePlugin_VersionCode=0x10000",
+					"JucePlugin_VersionString=\\\"1.0.0\\\"",
+					"JucePlugin_VSTUniqueID=JucePlugin_PluginCode",
+					"JucePlugin_VSTCategory=kPlugCategEffect",
+					"JucePlugin_Vst3Category=\\\"Fx\\\"",
+					"JucePlugin_AUMainType=\\'aufx\\'",
+					"JucePlugin_AUSubType=JucePlugin_PluginCode",
+					"JucePlugin_AUExportPrefix=JuceRnboShimmerReverbAU",
+					"JucePlugin_AUExportPrefixQuoted=\\\"JuceRnboShimmerReverbAU\\\"",
+					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_CFBundleIdentifier=com.yourcompany.JuceRnboShimmerReverb",
+					"JucePlugin_AAXIdentifier=com.yourcompany.JuceRnboShimmerReverb",
+					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
+					"JucePlugin_AAXCategory=0",
+					"JucePlugin_AAXDisableBypass=0",
+					"JucePlugin_AAXDisableMultiMono=0",
+					"JucePlugin_IAAType=0x61757278",
+					"JucePlugin_IAASubType=JucePlugin_PluginCode",
+					"JucePlugin_IAAName=\\\"yourcompany:\\ JuceRnboShimmerReverb\\\"",
+					"JucePlugin_VSTNumMidiInputs=16",
+					"JucePlugin_VSTNumMidiOutputs=16",
+					"JucePlugin_ARAContentTypes=0",
+					"JucePlugin_ARATransformationFlags=0",
+					"JucePlugin_ARAFactoryID=\\\"com.yourcompany.JuceRnboShimmerReverb.factory\\\"",
+					"JucePlugin_ARADocumentArchiveID=\\\"com.yourcompany.JuceRnboShimmerReverb.aradocumentarchive.1.0.0\\\"",
+					"JucePlugin_ARACompatibleArchiveIDs=\\\"\\\"",
+					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
+					"JUCER_XCODE_MAC_F6D2F4CF=1",
+					"JUCE_APP_VERSION=1.0.0",
+					"JUCE_APP_VERSION_HEX=0x10000",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"/Volumes/ssd/JUCE/modules/juce_audio_processors/format_types/VST3_SDK",
+					"/Volumes/ssd/VST_SDK/vst3sdk",
+					"$(SRCROOT)/../../JuceLibraryCode",
+					"/Volumes/ssd/JUCE/modules",
+					"$(PROJECT_DIR)/../../RnboExport/rnbo",
+					"$(PROJECT_DIR)/../../RnboExport/rnbo/common",
+					"/Volumes/ssd/JUCE/modules/juce_audio_plugin_client",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Info-VST3.plist;
+				INFOPLIST_PREPROCESS = NO;
+				INSTALL_PATH = "$(HOME)/Library/Audio/Plug-Ins/VST3/";
+				LIBRARY_STYLE = Bundle;
+				LLVM_LTO = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_HEADER_SEARCH_PATHS = "/Volumes/ssd/JUCE/modules/juce_audio_processors/format_types/VST3_SDK /Volumes/ssd/VST_SDK/vst3sdk $(SRCROOT)/../../JuceLibraryCode /Volumes/ssd/JUCE/modules $(PROJECT_DIR)/../../RnboExport/rnbo $(PROJECT_DIR)/../../RnboExport/rnbo/common /Volumes/ssd/JUCE/modules/juce_audio_plugin_client";
+				OTHER_LDFLAGS = "-bundle -lJuceRnboTemplate -weak_framework Metal -weak_framework MetalKit";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.JuceRnboShimmerReverb;
+				PRODUCT_NAME = "JuceRnboTemplate";
+				USE_HEADERMAP = NO;
+				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
+				WRAPPER_EXTENSION = vst3;
+			};
+			name = Release;
+		};
+		AAEEE68FE7FC7B3B2EC6E945 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_ARCHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_DEBUG=1",
+					"DEBUG=1",
+					"JUCE_DISPLAY_SPLASH_SCREEN=1",
+					"JUCE_USE_DARK_SPLASH_SCREEN=1",
+					"JUCE_PROJUCER_VERSION=0x70002",
+					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_processors=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_utils=1",
+					"JUCE_MODULE_AVAILABLE_juce_core=1",
+					"JUCE_MODULE_AVAILABLE_juce_data_structures=1",
+					"JUCE_MODULE_AVAILABLE_juce_events=1",
+					"JUCE_MODULE_AVAILABLE_juce_graphics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_extra=1",
+					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
+					"JUCE_VST3_CAN_REPLACE_VST2=0",
+					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
+					"JucePlugin_Build_VST=0",
+					"JucePlugin_Build_VST3=1",
+					"JucePlugin_Build_AU=1",
+					"JucePlugin_Build_AUv3=0",
+					"JucePlugin_Build_AAX=0",
+					"JucePlugin_Build_Standalone=1",
+					"JucePlugin_Build_Unity=0",
+					"JucePlugin_Build_LV2=0",
+					"JucePlugin_Enable_IAA=0",
+					"JucePlugin_Enable_ARA=0",
+					"JucePlugin_Name=\\\"JuceRnboShimmerReverb\\\"",
+					"JucePlugin_Desc=\\\"JuceRnboShimmerReverb\\\"",
+					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
+					"JucePlugin_ManufacturerWebsite=\\\"www.yourcompany.com\\\"",
+					"JucePlugin_ManufacturerEmail=\\\"\\\"",
+					"JucePlugin_ManufacturerCode=0x4d616e75",
+					"JucePlugin_PluginCode=0x42716977",
+					"JucePlugin_IsSynth=0",
+					"JucePlugin_WantsMidiInput=0",
+					"JucePlugin_ProducesMidiOutput=0",
+					"JucePlugin_IsMidiEffect=0",
+					"JucePlugin_EditorRequiresKeyboardFocus=0",
+					"JucePlugin_Version=1.0.0",
+					"JucePlugin_VersionCode=0x10000",
+					"JucePlugin_VersionString=\\\"1.0.0\\\"",
+					"JucePlugin_VSTUniqueID=JucePlugin_PluginCode",
+					"JucePlugin_VSTCategory=kPlugCategEffect",
+					"JucePlugin_Vst3Category=\\\"Fx\\\"",
+					"JucePlugin_AUMainType=\\'aufx\\'",
+					"JucePlugin_AUSubType=JucePlugin_PluginCode",
+					"JucePlugin_AUExportPrefix=JuceRnboShimmerReverbAU",
+					"JucePlugin_AUExportPrefixQuoted=\\\"JuceRnboShimmerReverbAU\\\"",
+					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_CFBundleIdentifier=com.yourcompany.JuceRnboShimmerReverb",
+					"JucePlugin_AAXIdentifier=com.yourcompany.JuceRnboShimmerReverb",
+					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
+					"JucePlugin_AAXCategory=0",
+					"JucePlugin_AAXDisableBypass=0",
+					"JucePlugin_AAXDisableMultiMono=0",
+					"JucePlugin_IAAType=0x61757278",
+					"JucePlugin_IAASubType=JucePlugin_PluginCode",
+					"JucePlugin_IAAName=\\\"yourcompany:\\ JuceRnboShimmerReverb\\\"",
+					"JucePlugin_VSTNumMidiInputs=16",
+					"JucePlugin_VSTNumMidiOutputs=16",
+					"JucePlugin_ARAContentTypes=0",
+					"JucePlugin_ARATransformationFlags=0",
+					"JucePlugin_ARAFactoryID=\\\"com.yourcompany.JuceRnboShimmerReverb.factory\\\"",
+					"JucePlugin_ARADocumentArchiveID=\\\"com.yourcompany.JuceRnboShimmerReverb.aradocumentarchive.1.0.0\\\"",
+					"JucePlugin_ARACompatibleArchiveIDs=\\\"\\\"",
+					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
+					"JUCER_XCODE_MAC_F6D2F4CF=1",
+					"JUCE_APP_VERSION=1.0.0",
+					"JUCE_APP_VERSION_HEX=0x10000",
+					"JUCE_SHARED_CODE=1",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Volumes/ssd/JUCE/modules/juce_audio_processors/format_types/VST3_SDK",
+					"/Volumes/ssd/VST_SDK/vst3sdk",
+					"$(SRCROOT)/../../JuceLibraryCode",
+					"/Volumes/ssd/JUCE/modules",
+					"$(PROJECT_DIR)/../../RnboExport/rnbo",
+					"$(PROJECT_DIR)/../../RnboExport/rnbo/common",
+					"/Volumes/ssd/JUCE/modules/juce_audio_plugin_client",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_HEADER_SEARCH_PATHS = "/Volumes/ssd/JUCE/modules/juce_audio_processors/format_types/VST3_SDK /Volumes/ssd/VST_SDK/vst3sdk $(SRCROOT)/../../JuceLibraryCode /Volumes/ssd/JUCE/modules $(PROJECT_DIR)/../../RnboExport/rnbo $(PROJECT_DIR)/../../RnboExport/rnbo/common /Volumes/ssd/JUCE/modules/juce_audio_plugin_client";
+				OTHER_LDFLAGS = "-weak_framework Metal -weak_framework MetalKit";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.JuceRnboShimmerReverb;
+				PRODUCT_NAME = "JuceRnboTemplate";
+				SKIP_INSTALL = YES;
+				USE_HEADERMAP = NO;
+				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
+			};
+			name = Debug;
+		};
+		AED1DE9AA7B3C44D515C91BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C052F2E69A5D0AA73652CDC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
+				DEAD_CODE_STRIPPING = YES;
+				EXCLUDED_ARCHS = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_NDEBUG=1",
+					"NDEBUG=1",
+					"JUCE_DISPLAY_SPLASH_SCREEN=1",
+					"JUCE_USE_DARK_SPLASH_SCREEN=1",
+					"JUCE_PROJUCER_VERSION=0x70002",
+					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_processors=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_utils=1",
+					"JUCE_MODULE_AVAILABLE_juce_core=1",
+					"JUCE_MODULE_AVAILABLE_juce_data_structures=1",
+					"JUCE_MODULE_AVAILABLE_juce_events=1",
+					"JUCE_MODULE_AVAILABLE_juce_graphics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_extra=1",
+					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
+					"JUCE_VST3_CAN_REPLACE_VST2=0",
+					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
+					"JucePlugin_Build_VST=0",
+					"JucePlugin_Build_VST3=0",
+					"JucePlugin_Build_AU=0",
+					"JucePlugin_Build_AUv3=0",
+					"JucePlugin_Build_AAX=0",
+					"JucePlugin_Build_Standalone=1",
+					"JucePlugin_Build_Unity=0",
+					"JucePlugin_Build_LV2=0",
+					"JucePlugin_Enable_IAA=0",
+					"JucePlugin_Enable_ARA=0",
+					"JucePlugin_Name=\\\"JuceRnboShimmerReverb\\\"",
+					"JucePlugin_Desc=\\\"JuceRnboShimmerReverb\\\"",
+					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
+					"JucePlugin_ManufacturerWebsite=\\\"www.yourcompany.com\\\"",
+					"JucePlugin_ManufacturerEmail=\\\"\\\"",
+					"JucePlugin_ManufacturerCode=0x4d616e75",
+					"JucePlugin_PluginCode=0x42716977",
+					"JucePlugin_IsSynth=0",
+					"JucePlugin_WantsMidiInput=0",
+					"JucePlugin_ProducesMidiOutput=0",
+					"JucePlugin_IsMidiEffect=0",
+					"JucePlugin_EditorRequiresKeyboardFocus=0",
+					"JucePlugin_Version=1.0.0",
+					"JucePlugin_VersionCode=0x10000",
+					"JucePlugin_VersionString=\\\"1.0.0\\\"",
+					"JucePlugin_VSTUniqueID=JucePlugin_PluginCode",
+					"JucePlugin_VSTCategory=kPlugCategEffect",
+					"JucePlugin_Vst3Category=\\\"Fx\\\"",
+					"JucePlugin_AUMainType=\\'aufx\\'",
+					"JucePlugin_AUSubType=JucePlugin_PluginCode",
+					"JucePlugin_AUExportPrefix=JuceRnboShimmerReverbAU",
+					"JucePlugin_AUExportPrefixQuoted=\\\"JuceRnboShimmerReverbAU\\\"",
+					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_CFBundleIdentifier=com.yourcompany.JuceRnboShimmerReverb",
+					"JucePlugin_AAXIdentifier=com.yourcompany.JuceRnboShimmerReverb",
+					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
+					"JucePlugin_AAXCategory=0",
+					"JucePlugin_AAXDisableBypass=0",
+					"JucePlugin_AAXDisableMultiMono=0",
+					"JucePlugin_IAAType=0x61757278",
+					"JucePlugin_IAASubType=JucePlugin_PluginCode",
+					"JucePlugin_IAAName=\\\"yourcompany:\\ JuceRnboShimmerReverb\\\"",
+					"JucePlugin_VSTNumMidiInputs=16",
+					"JucePlugin_VSTNumMidiOutputs=16",
+					"JucePlugin_ARAContentTypes=0",
+					"JucePlugin_ARATransformationFlags=0",
+					"JucePlugin_ARAFactoryID=\\\"com.yourcompany.JuceRnboShimmerReverb.factory\\\"",
+					"JucePlugin_ARADocumentArchiveID=\\\"com.yourcompany.JuceRnboShimmerReverb.aradocumentarchive.1.0.0\\\"",
+					"JucePlugin_ARACompatibleArchiveIDs=\\\"\\\"",
+					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
+					"JUCER_XCODE_MAC_F6D2F4CF=1",
+					"JUCE_APP_VERSION=1.0.0",
+					"JUCE_APP_VERSION_HEX=0x10000",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Volumes/ssd/JUCE/modules/juce_audio_processors/format_types/VST3_SDK",
+					"/Volumes/ssd/VST_SDK/vst3sdk",
+					"$(SRCROOT)/../../JuceLibraryCode",
+					"/Volumes/ssd/JUCE/modules",
+					"$(PROJECT_DIR)/../../RnboExport/rnbo",
+					"$(PROJECT_DIR)/../../RnboExport/rnbo/common",
+					"/Volumes/ssd/JUCE/modules/juce_audio_plugin_client",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Info-Standalone_Plugin.plist;
+				INFOPLIST_PREPROCESS = NO;
+				LLVM_LTO = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_HEADER_SEARCH_PATHS = "/Volumes/ssd/JUCE/modules/juce_audio_processors/format_types/VST3_SDK /Volumes/ssd/VST_SDK/vst3sdk $(SRCROOT)/../../JuceLibraryCode /Volumes/ssd/JUCE/modules $(PROJECT_DIR)/../../RnboExport/rnbo $(PROJECT_DIR)/../../RnboExport/rnbo/common /Volumes/ssd/JUCE/modules/juce_audio_plugin_client";
+				OTHER_LDFLAGS = "-lJuceRnboTemplate -weak_framework Metal -weak_framework MetalKit";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.JuceRnboShimmerReverb;
+				PRODUCT_NAME = "JuceRnboTemplate";
+				USE_HEADERMAP = NO;
+				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
+			};
+			name = Release;
+		};
+		D28C9329E6D18075C7A31E08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = NO;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PRODUCT_NAME = "JuceRnboTemplate";
+				SDKROOT = macosx;
+				WARNING_CFLAGS = "-Wreorder";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		D7D2597D985C7D9EA3DFC080 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
+				COPY_PHASE_STRIP = NO;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = /;
+				EXCLUDED_ARCHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_DEBUG=1",
+					"DEBUG=1",
+					"JUCE_DISPLAY_SPLASH_SCREEN=1",
+					"JUCE_USE_DARK_SPLASH_SCREEN=1",
+					"JUCE_PROJUCER_VERSION=0x70002",
+					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_processors=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_utils=1",
+					"JUCE_MODULE_AVAILABLE_juce_core=1",
+					"JUCE_MODULE_AVAILABLE_juce_data_structures=1",
+					"JUCE_MODULE_AVAILABLE_juce_events=1",
+					"JUCE_MODULE_AVAILABLE_juce_graphics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_extra=1",
+					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
+					"JUCE_VST3_CAN_REPLACE_VST2=0",
+					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
+					"JucePlugin_Build_VST=0",
+					"JucePlugin_Build_VST3=1",
+					"JucePlugin_Build_AU=0",
+					"JucePlugin_Build_AUv3=0",
+					"JucePlugin_Build_AAX=0",
+					"JucePlugin_Build_Standalone=0",
+					"JucePlugin_Build_Unity=0",
+					"JucePlugin_Build_LV2=0",
+					"JucePlugin_Enable_IAA=0",
+					"JucePlugin_Enable_ARA=0",
+					"JucePlugin_Name=\\\"JuceRnboShimmerReverb\\\"",
+					"JucePlugin_Desc=\\\"JuceRnboShimmerReverb\\\"",
+					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
+					"JucePlugin_ManufacturerWebsite=\\\"www.yourcompany.com\\\"",
+					"JucePlugin_ManufacturerEmail=\\\"\\\"",
+					"JucePlugin_ManufacturerCode=0x4d616e75",
+					"JucePlugin_PluginCode=0x42716977",
+					"JucePlugin_IsSynth=0",
+					"JucePlugin_WantsMidiInput=0",
+					"JucePlugin_ProducesMidiOutput=0",
+					"JucePlugin_IsMidiEffect=0",
+					"JucePlugin_EditorRequiresKeyboardFocus=0",
+					"JucePlugin_Version=1.0.0",
+					"JucePlugin_VersionCode=0x10000",
+					"JucePlugin_VersionString=\\\"1.0.0\\\"",
+					"JucePlugin_VSTUniqueID=JucePlugin_PluginCode",
+					"JucePlugin_VSTCategory=kPlugCategEffect",
+					"JucePlugin_Vst3Category=\\\"Fx\\\"",
+					"JucePlugin_AUMainType=\\'aufx\\'",
+					"JucePlugin_AUSubType=JucePlugin_PluginCode",
+					"JucePlugin_AUExportPrefix=JuceRnboShimmerReverbAU",
+					"JucePlugin_AUExportPrefixQuoted=\\\"JuceRnboShimmerReverbAU\\\"",
+					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_CFBundleIdentifier=com.yourcompany.JuceRnboShimmerReverb",
+					"JucePlugin_AAXIdentifier=com.yourcompany.JuceRnboShimmerReverb",
+					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
+					"JucePlugin_AAXCategory=0",
+					"JucePlugin_AAXDisableBypass=0",
+					"JucePlugin_AAXDisableMultiMono=0",
+					"JucePlugin_IAAType=0x61757278",
+					"JucePlugin_IAASubType=JucePlugin_PluginCode",
+					"JucePlugin_IAAName=\\\"yourcompany:\\ JuceRnboShimmerReverb\\\"",
+					"JucePlugin_VSTNumMidiInputs=16",
+					"JucePlugin_VSTNumMidiOutputs=16",
+					"JucePlugin_ARAContentTypes=0",
+					"JucePlugin_ARATransformationFlags=0",
+					"JucePlugin_ARAFactoryID=\\\"com.yourcompany.JuceRnboShimmerReverb.factory\\\"",
+					"JucePlugin_ARADocumentArchiveID=\\\"com.yourcompany.JuceRnboShimmerReverb.aradocumentarchive.1.0.0\\\"",
+					"JucePlugin_ARACompatibleArchiveIDs=\\\"\\\"",
+					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
+					"JUCER_XCODE_MAC_F6D2F4CF=1",
+					"JUCE_APP_VERSION=1.0.0",
+					"JUCE_APP_VERSION_HEX=0x10000",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"/Volumes/ssd/JUCE/modules/juce_audio_processors/format_types/VST3_SDK",
+					"/Volumes/ssd/VST_SDK/vst3sdk",
+					"$(SRCROOT)/../../JuceLibraryCode",
+					"/Volumes/ssd/JUCE/modules",
+					"$(PROJECT_DIR)/../../RnboExport/rnbo",
+					"$(PROJECT_DIR)/../../RnboExport/rnbo/common",
+					"/Volumes/ssd/JUCE/modules/juce_audio_plugin_client",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Info-VST3.plist;
+				INFOPLIST_PREPROCESS = NO;
+				INSTALL_PATH = "$(HOME)/Library/Audio/Plug-Ins/VST3/";
+				LIBRARY_STYLE = Bundle;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_HEADER_SEARCH_PATHS = "/Volumes/ssd/JUCE/modules/juce_audio_processors/format_types/VST3_SDK /Volumes/ssd/VST_SDK/vst3sdk $(SRCROOT)/../../JuceLibraryCode /Volumes/ssd/JUCE/modules $(PROJECT_DIR)/../../RnboExport/rnbo $(PROJECT_DIR)/../../RnboExport/rnbo/common /Volumes/ssd/JUCE/modules/juce_audio_plugin_client";
+				OTHER_LDFLAGS = "-bundle -lJuceRnboTemplate -weak_framework Metal -weak_framework MetalKit";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.JuceRnboShimmerReverb;
+				PRODUCT_NAME = "JuceRnboTemplate";
+				USE_HEADERMAP = NO;
+				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
+				WRAPPER_EXTENSION = vst3;
+			};
+			name = Debug;
+		};
+		DE409BEF5AD8D9D68AE98B09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_ARCHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_DEBUG=1",
+					"DEBUG=1",
+					"JUCE_DISPLAY_SPLASH_SCREEN=1",
+					"JUCE_USE_DARK_SPLASH_SCREEN=1",
+					"JUCE_PROJUCER_VERSION=0x70002",
+					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_processors=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_utils=1",
+					"JUCE_MODULE_AVAILABLE_juce_core=1",
+					"JUCE_MODULE_AVAILABLE_juce_data_structures=1",
+					"JUCE_MODULE_AVAILABLE_juce_events=1",
+					"JUCE_MODULE_AVAILABLE_juce_graphics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_extra=1",
+					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
+					"JUCE_VST3_CAN_REPLACE_VST2=0",
+					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
+					"JucePlugin_Build_VST=0",
+					"JucePlugin_Build_VST3=0",
+					"JucePlugin_Build_AU=0",
+					"JucePlugin_Build_AUv3=0",
+					"JucePlugin_Build_AAX=0",
+					"JucePlugin_Build_Standalone=1",
+					"JucePlugin_Build_Unity=0",
+					"JucePlugin_Build_LV2=0",
+					"JucePlugin_Enable_IAA=0",
+					"JucePlugin_Enable_ARA=0",
+					"JucePlugin_Name=\\\"JuceRnboShimmerReverb\\\"",
+					"JucePlugin_Desc=\\\"JuceRnboShimmerReverb\\\"",
+					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
+					"JucePlugin_ManufacturerWebsite=\\\"www.yourcompany.com\\\"",
+					"JucePlugin_ManufacturerEmail=\\\"\\\"",
+					"JucePlugin_ManufacturerCode=0x4d616e75",
+					"JucePlugin_PluginCode=0x42716977",
+					"JucePlugin_IsSynth=0",
+					"JucePlugin_WantsMidiInput=0",
+					"JucePlugin_ProducesMidiOutput=0",
+					"JucePlugin_IsMidiEffect=0",
+					"JucePlugin_EditorRequiresKeyboardFocus=0",
+					"JucePlugin_Version=1.0.0",
+					"JucePlugin_VersionCode=0x10000",
+					"JucePlugin_VersionString=\\\"1.0.0\\\"",
+					"JucePlugin_VSTUniqueID=JucePlugin_PluginCode",
+					"JucePlugin_VSTCategory=kPlugCategEffect",
+					"JucePlugin_Vst3Category=\\\"Fx\\\"",
+					"JucePlugin_AUMainType=\\'aufx\\'",
+					"JucePlugin_AUSubType=JucePlugin_PluginCode",
+					"JucePlugin_AUExportPrefix=JuceRnboShimmerReverbAU",
+					"JucePlugin_AUExportPrefixQuoted=\\\"JuceRnboShimmerReverbAU\\\"",
+					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_CFBundleIdentifier=com.yourcompany.JuceRnboShimmerReverb",
+					"JucePlugin_AAXIdentifier=com.yourcompany.JuceRnboShimmerReverb",
+					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
+					"JucePlugin_AAXCategory=0",
+					"JucePlugin_AAXDisableBypass=0",
+					"JucePlugin_AAXDisableMultiMono=0",
+					"JucePlugin_IAAType=0x61757278",
+					"JucePlugin_IAASubType=JucePlugin_PluginCode",
+					"JucePlugin_IAAName=\\\"yourcompany:\\ JuceRnboShimmerReverb\\\"",
+					"JucePlugin_VSTNumMidiInputs=16",
+					"JucePlugin_VSTNumMidiOutputs=16",
+					"JucePlugin_ARAContentTypes=0",
+					"JucePlugin_ARATransformationFlags=0",
+					"JucePlugin_ARAFactoryID=\\\"com.yourcompany.JuceRnboShimmerReverb.factory\\\"",
+					"JucePlugin_ARADocumentArchiveID=\\\"com.yourcompany.JuceRnboShimmerReverb.aradocumentarchive.1.0.0\\\"",
+					"JucePlugin_ARACompatibleArchiveIDs=\\\"\\\"",
+					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
+					"JUCER_XCODE_MAC_F6D2F4CF=1",
+					"JUCE_APP_VERSION=1.0.0",
+					"JUCE_APP_VERSION_HEX=0x10000",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Volumes/ssd/JUCE/modules/juce_audio_processors/format_types/VST3_SDK",
+					"/Volumes/ssd/VST_SDK/vst3sdk",
+					"$(SRCROOT)/../../JuceLibraryCode",
+					"/Volumes/ssd/JUCE/modules",
+					"$(PROJECT_DIR)/../../RnboExport/rnbo",
+					"$(PROJECT_DIR)/../../RnboExport/rnbo/common",
+					"/Volumes/ssd/JUCE/modules/juce_audio_plugin_client",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Info-Standalone_Plugin.plist;
+				INFOPLIST_PREPROCESS = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_HEADER_SEARCH_PATHS = "/Volumes/ssd/JUCE/modules/juce_audio_processors/format_types/VST3_SDK /Volumes/ssd/VST_SDK/vst3sdk $(SRCROOT)/../../JuceLibraryCode /Volumes/ssd/JUCE/modules $(PROJECT_DIR)/../../RnboExport/rnbo $(PROJECT_DIR)/../../RnboExport/rnbo/common /Volumes/ssd/JUCE/modules/juce_audio_plugin_client";
+				OTHER_LDFLAGS = "-lJuceRnboTemplate -weak_framework Metal -weak_framework MetalKit";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.JuceRnboShimmerReverb;
+				PRODUCT_NAME = "JuceRnboTemplate";
+				USE_HEADERMAP = NO;
+				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
+			};
+			name = Debug;
+		};
+		FBF64B49638C18ED159D6861 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
+				DEAD_CODE_STRIPPING = YES;
+				EXCLUDED_ARCHS = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_NDEBUG=1",
+					"NDEBUG=1",
+					"JUCE_DISPLAY_SPLASH_SCREEN=1",
+					"JUCE_USE_DARK_SPLASH_SCREEN=1",
+					"JUCE_PROJUCER_VERSION=0x70002",
+					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_processors=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_utils=1",
+					"JUCE_MODULE_AVAILABLE_juce_core=1",
+					"JUCE_MODULE_AVAILABLE_juce_data_structures=1",
+					"JUCE_MODULE_AVAILABLE_juce_events=1",
+					"JUCE_MODULE_AVAILABLE_juce_graphics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_extra=1",
+					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
+					"JUCE_VST3_CAN_REPLACE_VST2=0",
+					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
+					"JucePlugin_Build_VST=0",
+					"JucePlugin_Build_VST3=1",
+					"JucePlugin_Build_AU=1",
+					"JucePlugin_Build_AUv3=0",
+					"JucePlugin_Build_AAX=0",
+					"JucePlugin_Build_Standalone=1",
+					"JucePlugin_Build_Unity=0",
+					"JucePlugin_Build_LV2=0",
+					"JucePlugin_Enable_IAA=0",
+					"JucePlugin_Enable_ARA=0",
+					"JucePlugin_Name=\\\"JuceRnboShimmerReverb\\\"",
+					"JucePlugin_Desc=\\\"JuceRnboShimmerReverb\\\"",
+					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
+					"JucePlugin_ManufacturerWebsite=\\\"www.yourcompany.com\\\"",
+					"JucePlugin_ManufacturerEmail=\\\"\\\"",
+					"JucePlugin_ManufacturerCode=0x4d616e75",
+					"JucePlugin_PluginCode=0x42716977",
+					"JucePlugin_IsSynth=0",
+					"JucePlugin_WantsMidiInput=0",
+					"JucePlugin_ProducesMidiOutput=0",
+					"JucePlugin_IsMidiEffect=0",
+					"JucePlugin_EditorRequiresKeyboardFocus=0",
+					"JucePlugin_Version=1.0.0",
+					"JucePlugin_VersionCode=0x10000",
+					"JucePlugin_VersionString=\\\"1.0.0\\\"",
+					"JucePlugin_VSTUniqueID=JucePlugin_PluginCode",
+					"JucePlugin_VSTCategory=kPlugCategEffect",
+					"JucePlugin_Vst3Category=\\\"Fx\\\"",
+					"JucePlugin_AUMainType=\\'aufx\\'",
+					"JucePlugin_AUSubType=JucePlugin_PluginCode",
+					"JucePlugin_AUExportPrefix=JuceRnboShimmerReverbAU",
+					"JucePlugin_AUExportPrefixQuoted=\\\"JuceRnboShimmerReverbAU\\\"",
+					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_CFBundleIdentifier=com.yourcompany.JuceRnboShimmerReverb",
+					"JucePlugin_AAXIdentifier=com.yourcompany.JuceRnboShimmerReverb",
+					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
+					"JucePlugin_AAXCategory=0",
+					"JucePlugin_AAXDisableBypass=0",
+					"JucePlugin_AAXDisableMultiMono=0",
+					"JucePlugin_IAAType=0x61757278",
+					"JucePlugin_IAASubType=JucePlugin_PluginCode",
+					"JucePlugin_IAAName=\\\"yourcompany:\\ JuceRnboShimmerReverb\\\"",
+					"JucePlugin_VSTNumMidiInputs=16",
+					"JucePlugin_VSTNumMidiOutputs=16",
+					"JucePlugin_ARAContentTypes=0",
+					"JucePlugin_ARATransformationFlags=0",
+					"JucePlugin_ARAFactoryID=\\\"com.yourcompany.JuceRnboShimmerReverb.factory\\\"",
+					"JucePlugin_ARADocumentArchiveID=\\\"com.yourcompany.JuceRnboShimmerReverb.aradocumentarchive.1.0.0\\\"",
+					"JucePlugin_ARACompatibleArchiveIDs=\\\"\\\"",
+					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
+					"JUCER_XCODE_MAC_F6D2F4CF=1",
+					"JUCE_APP_VERSION=1.0.0",
+					"JUCE_APP_VERSION_HEX=0x10000",
+					"JUCE_SHARED_CODE=1",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Volumes/ssd/JUCE/modules/juce_audio_processors/format_types/VST3_SDK",
+					"/Volumes/ssd/VST_SDK/vst3sdk",
+					"$(SRCROOT)/../../JuceLibraryCode",
+					"/Volumes/ssd/JUCE/modules",
+					"$(PROJECT_DIR)/../../RnboExport/rnbo",
+					"$(PROJECT_DIR)/../../RnboExport/rnbo/common",
+					"/Volumes/ssd/JUCE/modules/juce_audio_plugin_client",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				LLVM_LTO = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_HEADER_SEARCH_PATHS = "/Volumes/ssd/JUCE/modules/juce_audio_processors/format_types/VST3_SDK /Volumes/ssd/VST_SDK/vst3sdk $(SRCROOT)/../../JuceLibraryCode /Volumes/ssd/JUCE/modules $(PROJECT_DIR)/../../RnboExport/rnbo $(PROJECT_DIR)/../../RnboExport/rnbo/common /Volumes/ssd/JUCE/modules/juce_audio_plugin_client";
+				OTHER_LDFLAGS = "-weak_framework Metal -weak_framework MetalKit";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.JuceRnboShimmerReverb;
+				PRODUCT_NAME = "JuceRnboTemplate";
+				SKIP_INSTALL = YES;
+				USE_HEADERMAP = NO;
+				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0B19ED254AFA1EF0B07D8888 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33C7F2E1C046D1F3BB15A90E,
+				AED1DE9AA7B3C44D515C91BB,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		3EA6FD5F6F35757D442A6BAC = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F9543ABA5E6199425A5C171,
+				D28C9329E6D18075C7A31E08,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5EA866C511262D8C178DBA59 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7D2597D985C7D9EA3DFC080,
+				8298B53942E67E3AC00C4915,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		660CA1D24A3A89EFA3986BB2 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11E1324513BCD911534DB6C2,
+				41194E9E02C46B135A30E0B7,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		91226EEB9E43CB47EEAE31D2 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAEEE68FE7FC7B3B2EC6E945,
+				FBF64B49638C18ED159D6861,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		AE936CC21BB6F2CE1DFC292A = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE409BEF5AD8D9D68AE98B09,
+				C052F2E69A5D0AA73652CDC6,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1AFA549D4641D736AAE8F694 /* Project object */;
+}
